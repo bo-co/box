@@ -30,7 +30,6 @@ strong,
 .phone,
 .logo {
   display: block;
-  overflow: hidden;
 }
 
 .phone::before {

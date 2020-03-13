@@ -20,6 +20,7 @@
 
 .header-ul,
 .header-logo,
+.header-nav,
 .header-nav-ul,
 .header-nav-ul-li {
   height: 100%;
@@ -70,6 +71,12 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.header-ul-li {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 /* навигация в шапке */
@@ -156,12 +163,6 @@
 
 .header-phone {
   position: relative;
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .header-phone::before {
@@ -177,9 +178,6 @@
 
 .header-lang {
   position: relative;
-  top: calc(50% - 1.25em);
-  right: 0;
-  z-index: 10;
   display: block;
   width: 2.5em;
   height: 2.5em;
