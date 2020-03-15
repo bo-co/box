@@ -11,12 +11,8 @@ article > div.content {
   padding: 0.5rem 1rem;
 }
 
-article > div.content > div,
-article > div.content > header {
-  padding: 0.5rem 0;
-}
-
 article > div.content > div {
+  padding: 0.5rem 0;
   font-size: 0.9em;
 }
 
@@ -50,17 +46,18 @@ article > div.content > div h4 {
 article > div.content > div h1,
 article > div.content > header h1 {
   padding: 0 0 0.5rem 0;
-  text-transform: uppercase;
 }
 
 article > div.content > div h1::before,
 article > div.content > header h1::before {
   position: absolute;
   top: calc(100% - 0.25rem);
-  z-index: 1;
+  left: 0;
+  z-index: 10;
   width: 2em;
   height: 2px;
   content: "";
+  background-color: rgba(105, 155, 245, 1);
 }
 
 article > div.content > div blockquote,
