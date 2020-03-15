@@ -7,7 +7,8 @@
 .informer-a,
 .informer-a-span,
 .header-submenu-li-a,
-.header-submenu-li-a-span {
+.header-submenu-li-a-span,
+.header-lang {
   display: block;
 }
 
@@ -19,23 +20,28 @@
 }
 
 .header-ul,
+.header-ul-li,
 .header-logo,
 .header-nav,
 .header-nav-ul,
-.header-nav-ul-li {
+.header-nav-ul-li,
+.header-nav-ul-li-element {
   height: 100%;
 }
 
 .header-ul,
 .header-nav-ul,
-.header-nav-ul-li {
+.header-nav-ul-li,
+.header-phone,
+.header-lang {
   position: relative;
-  z-index: 20;
+  z-index: 10;
 }
 
 .header::before,
 .informer,
-.header-submenu {
+.header-submenu,
+.header-phone::before {
   position: absolute;
 }
 
@@ -55,15 +61,17 @@
 }
 
 .header-ul,
+.header-ul-li,
 .header-nav-ul,
-.header-ul-li {
+.header-nav-ul-li-element {
   display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
 }
 
 .header-ul,
-.header-nav-ul {
+.header-nav-ul,
+.header-submenu {
   list-style: none;
 }
 
@@ -73,7 +81,8 @@
   justify-content: space-between;
 }
 
-.header-ul-li {
+.header-ul-li,
+.header-nav-ul-li-element {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -83,13 +92,15 @@
 
 .header-ul,
 .header-nav,
+.header-nav-ul,
 .header-nav-ul-li-element,
-.header-nav-ul-li-element-span {
+.header-nav-ul-li-element-span,
+.header-submenu {
   padding: 0;
 }
 
-.header-nav-ul {
-  padding: 0;
+.header-nav-ul,
+.header-submenu {
   margin: 0;
 }
 
@@ -98,13 +109,6 @@
 }
 
 .header-nav-ul-li-element {
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
   font-weight: 500;
 }
 
@@ -121,9 +125,6 @@
   top: 100%;
   left: 0;
   z-index: 20;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .header-submenu-li-a {
@@ -161,12 +162,7 @@
 
 /* телефон в шапке */
 
-.header-phone {
-  position: relative;
-}
-
 .header-phone::before {
-  position: absolute;
   top: calc(50% - 1.8em);
   left: 0;
   z-index: 1;
@@ -177,8 +173,6 @@
 /* язык в шапке */
 
 .header-lang {
-  position: relative;
-  display: block;
   width: 2.5em;
   height: 2.5em;
   font-weight: 600;
