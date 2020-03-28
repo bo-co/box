@@ -3,25 +3,11 @@
 footer > div.footer.copyright {
   padding: 1.5em 0;
   font-size: 0.8em;
+  min-height: 5.8em;
 }
 
 footer > div.footer.copyright > span,
 footer > div.footer.copyright > a,
 footer > div.footer.copyright > a > span {
   display: inline-block;
-  border: 0 !important;
 }
-
-@media (min-width : 1201px) {}
-
-@media (min-width : 961px) and (max-width : 1200px) {}
-
-@media (min-width : 721px) and (max-width : 960px) {}
-
-@media (min-width : 481px) and (max-width : 720px) {
-  footer > div.copyright > span::after {
-    display: none;
-  }
-}
-
-@media (max-width : 480px) {}

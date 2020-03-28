@@ -45,15 +45,12 @@ nav > ul > li > div > span > span {
 
 nav > ul > li > a > span > span,
 nav > ul > li > div > span > span {
-  -webkit-transform: scale(.9);
   transform: scale(.9);
-  -webkit-transform-origin: left center;
   transform-origin: left center;
 }
 
 nav > ul > li > ul > li > a > span > span,
 nav > ul > li > ul > li > div > span > span {
-  -webkit-transform: scale(.8);
   transform: scale(.8);
 }
 
@@ -98,7 +95,6 @@ nav > ul > li > div + span::after {
   width: 10px;
   height: 2px;
   content: "";
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -116,7 +112,6 @@ nav > ul > li > a + span::after,
 nav > ul > li.selected > a + span::before,
 nav > ul > li > div + span::after,
 nav > ul > li.selected > div + span::before {
-  -webkit-transform: rotate(-35deg);
   transform: rotate(-35deg);
 }
 
@@ -124,7 +119,6 @@ nav > ul > li > a + span::before,
 nav > ul > li.selected > a + span::after,
 nav > ul > li > div + span::before,
 nav > ul > li.selected > div + span::after {
-  -webkit-transform: rotate(35deg);
   transform: rotate(35deg);
 }
 

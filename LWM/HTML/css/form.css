@@ -1,65 +1,5 @@
 @charset "UTF-8";
 
-/* Кастомизация ВЕБ-формы -- начало */
-
-div.form > form ul > li > div {
-  background-color: rgba(255, 255, 255, 1);
-}
-
-div.form > form ul > li > div.accent {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-div.form > form li > div.choose::after,
-div.form > form ul > li > div.required::after {
-  color: rgba(160, 165, 170, 1);
-}
-
-div.form > form li > div > textarea,
-div.form > form li > div > input {
-  border: 1px solid rgba(240, 240, 240, 1);
-  border-radius: 0;
-  color: rgba(68, 68, 68, 1);
-}
-
-div.form > div > blockquote,
-div.form > form li > div > textarea + span,
-div.form > form li > div > input[type=text] + span,
-div.form > form li > div > input[type=email] + span,
-div.form > form li > div > input[type=tel] + span,
-div.form > form li > div.consent {
-  color: rgba(60, 66, 73, .5);
-}
-
-div.form > form li > div > button {
-  color: rgba(255, 255, 255, 1);
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  overflow: hidden;
-}
-
-div.form > form li > div > button::after {
-  position: absolute;
-  top: calc(50% - .7em);
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: scale(.8);
-  transform: scale(.8);
-  -webkit-transform-origin: center center;
-  transform-origin: center center;
-}
-
-div.form > form li > div.consent > span.checkbox {
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-/* Кастомизация ВЕБ-формы -- конец */
-
-/* ВЕБ-форма -- начало */
-
 div.form {
   left: -1rem;
   width: calc(100% + 2rem);
@@ -109,9 +49,7 @@ div.form.success > div > blockquote + blockquote {
 }
 
 div.form > div > blockquote {
-  -webkit-transform: scale(.9);
   transform: scale(.9);
-  -webkit-transform-origin: center center;
   transform-origin: center center;
 }
 
@@ -135,19 +73,13 @@ div.form > form ol.hide {
 div.form > form ul:not(.hide),
 div.form > form ol:not(.hide) {
   display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 div.form > form li {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   width: 50%;
   min-width: 240px;
@@ -169,9 +101,7 @@ div.form > form li > div.accent > span {
   display: inline-block;
   position: relative;
   top: 1em;
-  -webkit-transform: scale(1.2);
   transform: scale(1.2);
-  -webkit-transform-origin: left center;
   transform-origin: left center;
   font-weight: 600;
   white-space: nowrap;
@@ -184,16 +114,14 @@ div.form > form li > div.accent > span::before {
   z-index: 10;
   font-weight: 400;
   font-family: "content", Arial, Tahoma, Verdana, sans-serif;
-  -webkit-transform: scale(.7);
   transform: scale(.7);
-  -webkit-transform-origin: right center;
   transform-origin: right center;
   content: "обратная связь";
   white-space: nowrap;
   color: rgba(60, 66, 73, 0.75);
 }
 
-div.form > form li > div.choose > input {
+div.form > form li > div.choose > label > input {
   cursor: pointer;
 }
 
@@ -204,7 +132,6 @@ div.form > form ul > li > div.required::after {
   right: 1px;
   z-index: 3;
   width: 1.2em;
-  -webkit-transform: scale(.8);
   transform: scale(.8);
 }
 
@@ -223,15 +150,15 @@ div.form > form li > div.textarea {
   height: calc(100% - 0.5rem);
 }
 
-div.form > form li > div > textarea {
+div.form > form li > div > label > textarea {
   min-height: calc(7.5em + 1.5rem);
   resize: none;
 }
 
-div.form > form li > div > textarea,
-div.form > form li > div > input[type=text],
-div.form > form li > div > input[type=email],
-div.form > form li > div > input[type=tel] {
+div.form > form li > div > label > textarea,
+div.form > form li > div > label > input[type=text],
+div.form > form li > div > label > input[type=email],
+div.form > form li > div > label > input[type=tel] {
   display: block;
   position: relative;
   z-index: 2;
@@ -244,65 +171,60 @@ div.form > form li > div > input[type=tel] {
   background-color: rgba(255, 255, 255, 0);
 }
 
-div.form > form li > div > input[type=text],
-div.form > form li > div > input[type=email],
-div.form > form li > div > input[type=tel] {
+div.form > form li > div > label > input[type=text],
+div.form > form li > div > label > input[type=email],
+div.form > form li > div > label > input[type=tel] {
   min-height: 3.125em;
 }
 
-div.form > form li > div > textarea,
-div.form > form li > div > input[type=text],
-div.form > form li > div > input[type=email],
-div.form > form li > div > input[type=tel],
-div.form > form li > div > textarea + span,
-div.form > form li > div > input[type=text] + span,
-div.form > form li > div > input[type=email] + span,
-div.form > form li > div > input[type=tel] + span {
+div.form > form li > div > label > textarea,
+div.form > form li > div > label > input[type=text],
+div.form > form li > div > label > input[type=email],
+div.form > form li > div > label > input[type=tel],
+div.form > form li > div > label > textarea + span,
+div.form > form li > div > label > input[type=text] + span,
+div.form > form li > div > label > input[type=email] + span,
+div.form > form li > div > label > input[type=tel] + span {
   font-size: .8em;
   line-height: inherit;
-  -webkit-transition: all .3s ease;
+  font-family: "content", Arial, Tahoma, Verdana, sans-serif;
   transition: all .3s ease;
 }
 
-div.form > form li > div > textarea + span,
-div.form > form li > div > input[type=text] + span,
-div.form > form li > div > input[type=email] + span,
-div.form > form li > div > input[type=tel] + span {
+div.form > form li > div > label > textarea + span,
+div.form > form li > div > label > input[type=text] + span,
+div.form > form li > div > label > input[type=email] + span,
+div.form > form li > div > label > input[type=tel] + span {
   display: block;
   position: absolute;
   top: .8em;
   left: 1em;
   z-index: 1;
-  -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
   white-space: nowrap;
 }
 
-div.form > form li > div > input[type=text]:focus + span,
-div.form > form li > div > input[type=email]:focus + span,
-div.form > form li > div > input[type=tel]:focus + span,
-div.form > form li > div > input[type=text] + span.selected,
-div.form > form li > div > input[type=email] + span.selected,
-div.form > form li > div > input[type=tel] + span.selected,
-div.form > form li > div > textarea:focus + span,
-div.form > form li > div > textarea + span.selected {
-  -webkit-transform: scale(0, 0);
+div.form > form li > div > label > input[type=text]:focus + span,
+div.form > form li > div > label > input[type=email]:focus + span,
+div.form > form li > div > label > input[type=tel]:focus + span,
+div.form > form li > div > label > input[type=text] + span.selected,
+div.form > form li > div > label > input[type=email] + span.selected,
+div.form > form li > div > label > input[type=tel] + span.selected,
+div.form > form li > div > label > textarea:focus + span,
+div.form > form li > div > label > textarea + span.selected {
   transform: scale(0, 0);
 }
 
 div.form > form li > div > button {
   position: relative;
   width: 100%;
-  height: 2.5em;
   padding: 0 1.5em;
   margin: 0;
   border: 0;
-  cursor: default;
-  font-size: inherit;
-  font-weight: 600;
+  cursor: pointer;
   text-align: center;
-  text-transform: uppercase;
   white-space: nowrap;
+  transition: all .3s ease;
   overflow: hidden;
 }
 
@@ -312,7 +234,7 @@ div.form > form li > div > button.active {
 }
 
 div.form > form li > div.consent {
-  padding-left: 2.5em;
+  /* padding-left: 2.5em; */
   font-size: .8em;
 }
 
@@ -327,6 +249,7 @@ div.form > form li > div.consent > span.checkbox {
   z-index: 1;
   width: 1.5em;
   height: 1.5em;
+  transition: all .3s ease;
 }
 
 div.form > form li > div.consent > span.checkbox.checked::before {
@@ -340,7 +263,6 @@ div.form > form li > div.consent > span.checkbox.checked::before {
   border-left: solid 2px rgba(255, 255, 255, 1);
   border-bottom: solid 2px rgba(255, 255, 255, 1);
   content: "";
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -348,7 +270,7 @@ div.form > form li > div.consent > input[type=checkbox] {
   display: none;
 }
 
-/* список выбора -- начало */
+/* список выбора */
 
 div.container > div.list {
   position: absolute;
@@ -368,46 +290,11 @@ div.container > div.list > div > div > ul {
 div.container > div.list > div > div > ul > li {
   padding: 0.4em 1em;
   cursor: pointer;
-  -webkit-transition: color .3s ease;
   transition: color .3s ease;
 }
 
 div.container > div.list > div > div > ul > li > span {
   display: block;
-  -webkit-transform: scale(.8);
   transform: scale(.8);
-  -webkit-transform-origin: left center;
   transform-origin: left center;
-}
-
-/* список выбора -- конец */
-
-@media (min-width : 1201px) {
-  div.form > div > span.accent {
-    font-size: 1.8em;
-  }
-}
-
-@media (min-width : 961px) and (max-width : 1200px) {
-  div.form > div > span.accent {
-    font-size: 1.7em;
-  }
-}
-
-@media (min-width : 721px) and (max-width : 960px) {
-  div.form > div > span.accent {
-    font-size: 1.6em;
-  }
-}
-
-@media (min-width : 481px) and (max-width : 720px) {
-  div.form > div > span.accent {
-    font-size: 1.5em;
-  }
-}
-
-@media (max-width : 480px) {
-  div.form > div > span.accent {
-    font-size: 1.4em;
-  }
 }

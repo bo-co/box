@@ -1,5 +1,7 @@
 var el = null,
-  result = null;
+  result = null,
+  check = null,
+  form = null;
 
 function clear(el) {
   "use strict";
@@ -58,6 +60,32 @@ function isRequire(classname) {
   return false;
 }
 
+function isCheck(check, form) {
+  "use strict";
+  if ($(check).data("check") === "name") {
+    result = isName($(check).val());
+  }
+  if ($(check).data("check") === "phone") {
+    result = isPhone($(check).val());
+  }
+  if ($(check).data("check") === "email") {
+    result = isEmail($(check).val());
+  }
+  if (!result) {
+    if ($(check).hasClass("success")) {
+      $(check).removeClass("success");
+    }
+    $(check).addClass("error");
+    $("div.baron.baron-article > div.baron-scroller").scrollTo($("#" + form), 600);
+  } else {
+    if ($(check).hasClass("error")) {
+      $(check).removeClass("error");
+    }
+    $(check).addClass("success");
+  }
+  return false;
+}
+
 function isForm(form) {
   "use strict";
   $.ajax({
@@ -109,47 +137,20 @@ $(document).ready(function () {
           $(el).next("span").addClass("selected");
         }
         if ($(el).parent().hasClass("required")) {
-          if ($(el).data("check") === "name") {
-            result = isName($(el).val());
-          }
-          if ($(el).data("check") === "phone") {
-            result = isPhone($(el).val());
-          }
-          if ($(el).data("check") === "email") {
-            result = isEmail($(el).val());
-          }
-          if (!result) {
-            if ($(el).hasClass("success")) {
-              $(el).removeClass("success");
-            }
-            $(el).addClass("error");
-          } else {
-            if ($(el).hasClass("error")) {
-              $(el).removeClass("error");
-            }
-            $(el).addClass("success");
-          }
+          isCheck(el);
         }
       }
       isRequire($(el).data("form"));
     }, 100);
   });
-  $("span.checkbox").on("click", function () {
-    if (!$(this).hasClass("checked")) {
-      $(this).addClass("checked");
-      $(this).prev("input").prop("checked", true);
-      $(this).prev("input").addClass("success");
-    } else {
-      $(this).removeClass("checked");
-      $(this).prev("input").prop("checked", false);
-      $(this).prev("input").removeClass("success");
-    }
-    isRequire($(this).data("form"));
-  });
   $("div.form > form li > div > button").on("click", function () {
     if ($(this).hasClass("active")) {
       /* isForm($(this).data("form")); */
       $("div.form").addClass("success");
+    } else {
+      $("div.form." + $(this).data("form") + " .required > input").each(function () {
+        isCheck(this, $(this).data("form"));
+      });
     }
   });
   clear($(".field"));

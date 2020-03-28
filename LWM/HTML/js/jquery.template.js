@@ -15,6 +15,14 @@ function loadCSS(source, type) {
   s.appendChild(sc);
 }
 
+function isVH() {
+  "use strict";
+  setTimeout(function () {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }, 50);
+}
+
 function isResize() {
   "use strict";
   if ($("div.container").hasClass("opened")) {
@@ -22,10 +30,9 @@ function isResize() {
   }
   if (!vhCSS) {
     loadCSS("css/vh.css?" + $.now(), "stylesheet");
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
     vhCSS = true;
   }
+  isVH();
   setTimeout(function () {
     baron__nav.update();
     baron__article.update();
