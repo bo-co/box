@@ -163,9 +163,8 @@ div.container > div.workspace > div:first-child > div.box > div:last-child > div
   color: rgba(255, 255, 255, 1);
 }
 
-div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > a:hover,
-div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > ul > li > a:hover {
-  /* background-color: rgba(235, 235, 235, 1); */
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > div {
+  background-color: rgba(26, 26, 26, 1);
 }
 
 div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > div > span,
