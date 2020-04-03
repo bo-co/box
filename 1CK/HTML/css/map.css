@@ -19,7 +19,7 @@
 .map-footer-wave {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -.25em;
   z-index: 20;
   width: 100%;
   padding-top: 15%;
