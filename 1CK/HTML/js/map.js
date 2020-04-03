@@ -3,7 +3,7 @@ var marker;
 function init() {
   var mapOptions = {
     zoom: 17,
-    center: new google.maps.LatLng(55.909120, 37.917933),
+    center: new google.maps.LatLng(52.574699, 39.615821),
     disableDefaultUI: true,
     scrollwheel: false,
     draggable: false,
@@ -59,7 +59,7 @@ function init() {
     strokeWeight: 0
   };
   marker = new google.maps.Marker({
-    position: new google.maps.LatLng(55.909450, 37.917233),
+    position: new google.maps.LatLng(52.574699, 39.615821),
     icon: tarantul,
     map: map,
     title: "Первая сетевая компания",
