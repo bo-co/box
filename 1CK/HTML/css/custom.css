@@ -1,0 +1,493 @@
+@charset "UTF-8";
+
+body {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(26, 26, 26, 1);
+}
+
+a {
+  color: rgba(200, 56, 52, 1);
+  border-bottom: 1px solid rgba(194, 83, 73, .5);
+}
+
+a:hover {
+  color: rgba(77, 77, 77, 1);
+  border-bottom: 1px solid rgba(77, 77, 77, .5);
+}
+
+footer > div.footer.copyright > a,
+nav > ul > li > a,
+nav > ul > li > ul > li > a {
+  border: 0 !important;
+}
+
+/* header */
+.header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px rgba(77, 77, 77, .1);
+}
+
+.header::before {
+  display: none;
+  background-color: rgba(77, 77, 77, 1);
+}
+
+.header-nav-ul-li-a {
+  color: rgba(165, 165, 165, 1);
+}
+
+.header-nav-ul-li-a:hover {
+  color: rgba(77, 77, 77, 1);
+}
+
+.header-nav-ul-li-span {
+  color: rgba(200, 56, 52, 1);
+}
+
+.header-nav-ul-li-element {
+  font-weight: 500;
+}
+
+.header-submenu {
+  background-color: rgba(250, 250, 250, 1);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+}
+
+.header-submenu-li-a {
+  color: rgba(160, 160, 160, 1);
+  border: 0 !important;
+}
+
+.header-submenu-li-a:hover {
+  color: rgba(110, 113, 116, 1);
+  background-color: rgba(235, 235, 235, 1);
+}
+
+.header-submenu-li-span {
+  color: rgba(0, 0, 0, 1);
+}
+
+.header-phone {
+  font-size: 1em;
+  color: rgba(26, 26, 26, 1);
+  border: 0 !important;
+}
+
+.header-phone:hover {
+  color: rgba(200, 56, 52, 1);
+}
+
+.header-phone-span-comment {
+  font-size: .75em;
+  line-height: .75em;
+  color: rgba(77, 77, 77, 1);
+}
+
+.logo-header {
+  border: 0 !important;
+}
+
+.header-logo {
+  margin-left: 1em;
+  border: 0 !important;
+}
+
+/* burder */
+
+ul.burger > li {
+  background-color: rgba(77, 77, 77, 1);
+}
+
+/* workspace */
+
+div.container > div.workspace > div:first-child {
+  background-color: rgba(77, 77, 77, 1);
+}
+
+div.container > div.workspace > div:first-child::before {
+  display: none;
+}
+
+.breadcrumbs-li::before,
+.breadcrumbs-li::after {
+  background-color: rgba(160, 160, 160, 1);
+}
+
+/* nav */
+
+.aside-logo {
+  border: 0 !important;
+}
+
+.aside-phone {
+  color: rgba(255, 255, 255, 1);
+  border: 0 !important;
+}
+
+.aside-phone:hover {
+  color: rgba(165, 165, 165, 1);
+}
+
+.aside-phone-span {
+  transform: scale(1.22);
+}
+
+.aside-phone-span-comment {
+  font-size: .92em;
+  line-height: 2;
+  color: rgba(165, 165, 165, 1);
+}
+
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child {
+  background-color: rgba(77, 77, 77, 1);
+}
+
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:nth-child(2) {
+  background-color: rgba(26, 26, 26, 1);
+}
+
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li {
+  color: rgba(255, 255, 255, 1);
+}
+
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > a:hover,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:nth-child(2) > nav > ul > li > a:hover,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > ul > li > a,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:nth-child(2) > nav > ul > li > ul > li > a {
+  color: rgba(165, 165, 165, 1);
+}
+
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > ul > li > a:hover,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:nth-child(2) > nav > ul > li > ul > li > a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > a:hover,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > ul > li > a:hover {
+  /* background-color: rgba(235, 235, 235, 1); */
+}
+
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > div > span,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > ul > li > div > span {
+  color: rgba(200, 56, 52, 1);
+}
+
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:nth-child(2) > nav > ul > li > div > span,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:nth-child(2) > nav > ul > li > ul > li > div > span {
+  color: rgba(255, 255, 255, 1);
+}
+
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li > nav > ul > li > a + span::before,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li > nav > ul > li > a + span::after,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li > nav > ul > li > div + span::before,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li > nav > ul > li > div + span::after {
+  background-color: rgba(165, 165, 165, 1);
+}
+
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li > nav > ul > li > a + span:hover::before,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li > nav > ul > li > a + span:hover::after,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li > nav > ul > li > div + span:hover::before,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li > nav > ul > li > div + span:hover::after {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* footer */
+
+footer {
+  background-color: rgba(26, 26, 26, 1);
+}
+
+footer > div.footer.copyright {
+  color: rgba(165, 165, 165, 1);
+}
+
+/* form */
+
+div.form {
+  background-color: rgba(245, 245, 245, 1);
+}
+
+div.form > div > span {
+  color: rgba(26, 26, 26, 1);
+}
+
+div.form:not(.success) > div > span,
+div.form:not(.success) > div > blockquote {
+  display: none !important;
+}
+
+div.form > div > blockquote,
+div.form > form li > div.consent {
+  color: rgba(77, 77, 77, 1);
+}
+
+div.form > form ul > li > div {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+div.form > form ul > li > div.accent {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+div.form > form li > div.accent > span::before {
+  color: rgba(77, 77, 77, 1);
+}
+
+div.form > form li > div > label > textarea + span,
+div.form > form li > div > label > input[type=text] + span,
+div.form > form li > div > label > input[type=email] + span,
+div.form > form li > div > label > input[type=tel] + span {
+  color: rgba(77, 77, 77, 1);
+}
+
+div.form > form li > div > label > textarea,
+div.form > form li > div > label > input {
+  border: 1px solid rgba(238, 238, 238, 1);
+  color: rgba(26, 26, 26, 1);
+}
+
+div.form > form li > div > label > textarea:focus,
+div.form > form li > div > label > input:focus {
+  border: 1px solid rgba(204, 204, 204, 1);
+}
+
+div.form > form ul > li > div > label > input.error {
+  border: 1px solid rgba(200, 56, 52, 1) !important;
+}
+
+div.form > form li > div.choose::after,
+div.form > form ul > li > div.required::after {
+  color: rgba(160, 160, 160, 1);
+}
+
+div.form > form li > div > button {
+  height: 3.125em;
+  border-radius: .25em;
+  font-size: .8em;
+  line-height: 3.125em;
+  text-transform: uppercase;
+  background-color: rgba(200, 56, 52, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+div.form > form li > div > button:hover {
+  background-color: rgba(130, 20, 17, 1);
+}
+
+div.form > form li > div,
+div.form > form li > div > button,
+div.form > form li > div > label > textarea,
+div.form > form li > div > label > input {
+  border-radius: .25em;
+}
+
+/* article */
+
+article > div.content > div blockquote,
+article > div.content > header blockquote {
+  color: rgba(77, 77, 77, 1);
+}
+
+/* developer */
+footer > div.footer.copyright > a.developer::after {
+  color: rgba(255, 255, 255, 1);
+}
+
+footer > div.footer.copyright > a.developer:hover::after {
+  color: rgba(165, 165, 165, 1);
+}
+
+/* список выбора */
+
+div.container > div.list {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px rgba(77, 77, 77, .1);
+  border-radius: .25em;
+  overflow: hidden;
+}
+
+div.container > div.list > div > div > ul > li {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(77, 77, 77, 1);
+}
+
+div.container > div.list > div > div > ul > li:hover {
+  color: rgba(200, 56, 52, 1);
+}
+
+@media (min-width : 1201px) {
+  .header {
+    height: 5.5em;
+    padding-left: calc(16em + 1rem);
+    padding-right: 1rem;
+  }
+
+  div.form > div > span,
+  article > div.content > div > h1,
+  article > div.content > div > h2,
+  article > div.content > header h1 {
+    font-size: 2.4em;
+  }
+
+  article > div.content > div > h3 {
+    font-size: 2.3em;
+  }
+
+  article > div.content > div > h4 {
+    font-size: 2.2em;
+  }
+
+  div.container > div.workspace > div:first-child {
+    padding-top: calc(5.5em - 1rem);
+  }
+
+  div.container > div.workspace > div:last-child {
+    padding-top: 5.5em;
+  }
+
+  .aside-phone,
+  .aside-logo {
+    display: none;
+  }
+}
+
+@media (min-width : 961px) and (max-width : 1200px) {
+  .header {
+    height: 5.5em;
+    padding-left: calc(16em + 1rem);
+    padding-right: 1rem;
+  }
+
+  div.form > div > span,
+  article > div.content > div > h1,
+  article > div.content > div > h2,
+  article > div.content > header h1 {
+    font-size: 2.2em;
+  }
+
+  article > div.content > div > h3 {
+    font-size: 2.1em;
+  }
+
+  article > div.content > div > h4 {
+    font-size: 2em;
+  }
+
+  div.container > div.workspace > div:first-child {
+    padding-top: calc(5.5em - 1rem);
+  }
+
+  div.container > div.workspace > div:last-child {
+    padding-top: 5.5em;
+  }
+
+  .aside-phone,
+  .aside-logo {
+    display: none;
+  }
+}
+
+@media (min-width : 721px) and (max-width : 960px) {
+  .header {
+    height: 4.5em;
+    padding: 0 1rem;
+  }
+
+  .header-logo {
+    max-width: 7.5em;
+  }
+
+  div.form > div > span,
+  article > div.content > div > h1,
+  article > div.content > header h1,
+  article > div.content > div > h2 {
+    font-size: 2em;
+  }
+
+  article > div.content > div > h3 {
+    font-size: 1.9em;
+  }
+
+  article > div.content > div > h4 {
+    font-size: 1.8em;
+  }
+
+  div.container > div.workspace > div:first-child {
+    padding-top: calc(4.5em - 1rem);
+  }
+
+  .aside-phone,
+  .aside-logo {
+    display: none;
+  }
+}
+
+@media (min-width : 481px) and (max-width : 720px) {
+  .header {
+    height: 4.5em;
+    padding: 0 1rem;
+  }
+
+  .header-logo {
+    max-width: 7.5em;
+  }
+
+  div.form > div > span,
+  article > div.content > div > h1,
+  article > div.content > header h1,
+  article > div.content > div > h2 {
+    font-size: 1.8em;
+  }
+
+  article > div.content > div > h3 {
+    font-size: 1.7em;
+  }
+
+  article > div.content > div > h4 {
+    font-size: 1.6em;
+  }
+
+  div.container > div.workspace > div:first-child {
+    padding-top: calc(4.5em - 1rem);
+  }
+
+  .aside-phone,
+  .aside-logo {
+    display: none;
+  }
+}
+
+@media (max-width : 480px) {
+  .header {
+    height: 3.5em;
+    padding: 0 1rem;
+  }
+
+  .header-logo {
+    max-width: 6.5em;
+  }
+
+  div.form > div > span,
+  article > div.content > div > h1,
+  article > div.content > div > h2,
+  article > div.content > header h1 {
+    font-size: 1.6em;
+  }
+
+  article > div.content > div > h3 {
+    font-size: 1.5em;
+  }
+
+  article > div.content > div > h4 {
+    font-size: 1.4em;
+  }
+
+  div.container > div.workspace > div:first-child {
+    padding-top: 3.5em;
+  }
+
+  .aside-logo {
+    display: none;
+  }
+}

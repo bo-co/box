@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.footer.wave {
+  position: relative;
+  left: -1rem;
+  z-index: 10;
+  width: calc(100% + 2rem);
+  background-color: rgba(245, 245, 245, 1);
+}
+
+.wave-div {
+  width: 100%;
+  padding-top: 12%;
+  background-image: url(../img/wave.svg?301120190201);
+  background-position: 1% -1%;
+  background-repeat: no-repeat;
+  background-size: 104% 104%;
+}

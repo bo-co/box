@@ -1,0 +1,298 @@
+@charset "UTF-8";
+
+div.form {
+  left: -1rem;
+  width: calc(100% + 2rem);
+  padding: .5rem .5rem 0 1rem;
+}
+
+div.form > div {
+  padding-right: .5rem;
+}
+
+div.form > form {
+  padding: .5em 0;
+}
+
+div.form > div,
+div.form > form {
+  margin: 0 auto;
+}
+
+div.form > div > span,
+div.form > div > blockquote {
+  text-align: center;
+}
+
+div.form > div > span {
+  font-weight: 300;
+}
+
+div.form > div > blockquote {
+  padding: 0 0 .5rem 0;
+}
+
+div.form.success > form,
+div.form.success > div > span,
+div.form.success > div > blockquote,
+div.form:not(.success) > div > span + span,
+div.form:not(.success) > div > blockquote + blockquote {
+  display: none;
+}
+
+div.form:not(.success) > form,
+div.form:not(.success) > div > span,
+div.form:not(.success) > div > blockquote,
+div.form.success > div > span + span,
+div.form.success > div > blockquote + blockquote {
+  display: block;
+}
+
+div.form > div > blockquote {
+  transform: scale(.9);
+  transform-origin: center center;
+}
+
+div.form > div,
+div.form > form,
+div.form > form li {
+  max-width: calc(960px + .5rem);
+}
+
+div.form,
+div.form > form,
+div.form > form li > div {
+  position: relative;
+}
+
+div.form > form ul.hide,
+div.form > form ol.hide {
+  display: none;
+}
+
+div.form > form ul:not(.hide),
+div.form > form ol:not(.hide) {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.form > form li {
+  flex-grow: 1;
+  width: 50%;
+  min-width: 240px;
+  padding: inherit;
+  margin: inherit;
+  background-color: inherit;
+}
+
+div.form > form li > div {
+  min-height: 2.5em;
+}
+
+div.form > form li > div {
+  width: calc(100% - .5rem);
+  margin: 0 0 .5rem 0;
+}
+
+div.form > form li > div.accent > span {
+  display: inline-block;
+  position: relative;
+  top: 1em;
+  transform: scale(1.2);
+  transform-origin: left center;
+  white-space: nowrap;
+}
+
+div.form > form li > div.accent > span::before {
+  position: absolute;
+  bottom: calc(100% - .5em);
+  right: 0;
+  z-index: 10;
+  font-weight: 400;
+  font-family: "content", Arial, Tahoma, Verdana, sans-serif;
+  transform: scale(.7);
+  transform-origin: right center;
+  content: "обратная связь";
+  white-space: nowrap;
+}
+
+div.form > form li > div.choose > label > input {
+  cursor: pointer;
+}
+
+div.form > form li > div.choose::after,
+div.form > form ul > li > div.required::after {
+  position: absolute;
+  top: calc(50% - .7em);
+  right: 1px;
+  z-index: 3;
+  width: 1.2em;
+  transform: scale(.8);
+}
+
+div.form > form li > div.choose::after {
+  font-family: "icomoon" !important;
+  content: "\e903";
+}
+
+div.form > form ul > li > div.required::after {
+  font-weight: 700;
+  font-family: Arial, Tahoma, Verdana, sans-serif;
+  content: "\273b";
+}
+
+div.form > form li > div.textarea {
+  height: calc(100% - 0.5rem);
+}
+
+div.form > form li > div > label > textarea {
+  min-height: calc(7.5em + 1.5rem);
+  resize: none;
+}
+
+div.form > form li > div > label > textarea,
+div.form > form li > div > label > input[type=text],
+div.form > form li > div > label > input[type=email],
+div.form > form li > div > label > input[type=tel] {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding-right: 2em;
+  padding-left: 1em;
+  padding-top: .7em;
+  padding-bottom: .7em;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+div.form > form li > div > label > input[type=text],
+div.form > form li > div > label > input[type=email],
+div.form > form li > div > label > input[type=tel] {
+  min-height: 3.125em;
+}
+
+div.form > form li > div > label > textarea,
+div.form > form li > div > label > input[type=text],
+div.form > form li > div > label > input[type=email],
+div.form > form li > div > label > input[type=tel],
+div.form > form li > div > label > textarea + span,
+div.form > form li > div > label > input[type=text] + span,
+div.form > form li > div > label > input[type=email] + span,
+div.form > form li > div > label > input[type=tel] + span {
+  font-size: .8em;
+  line-height: inherit;
+  font-family: "content", Arial, Tahoma, Verdana, sans-serif;
+  transition: all .3s ease;
+}
+
+div.form > form li > div > label > textarea + span,
+div.form > form li > div > label > input[type=text] + span,
+div.form > form li > div > label > input[type=email] + span,
+div.form > form li > div > label > input[type=tel] + span {
+  display: block;
+  position: absolute;
+  top: .9em;
+  left: 1em;
+  z-index: 1;
+  transform: scale(1, 1);
+  white-space: nowrap;
+}
+
+div.form > form li > div > label > input[type=text]:focus + span,
+div.form > form li > div > label > input[type=email]:focus + span,
+div.form > form li > div > label > input[type=tel]:focus + span,
+div.form > form li > div > label > input[type=text] + span.selected,
+div.form > form li > div > label > input[type=email] + span.selected,
+div.form > form li > div > label > input[type=tel] + span.selected,
+div.form > form li > div > label > textarea:focus + span,
+div.form > form li > div > label > textarea + span.selected {
+  transform: scale(0, 0);
+}
+
+div.form > form li > div > button {
+  position: relative;
+  width: 100%;
+  padding: 0 1.5em;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  transition: all .3s ease;
+  overflow: hidden;
+}
+
+div.form > form li > div.consent > span.checkbox,
+div.form > form li > div > button.active {
+  cursor: pointer;
+}
+
+div.form > form li > div.consent {
+  /* padding-left: 2.5em; */
+  font-size: .8em;
+}
+
+div.form > form li > div.consent > span {
+  display: block;
+}
+
+div.form > form li > div.consent > span.checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 1.5em;
+  height: 1.5em;
+  transition: all .3s ease;
+}
+
+div.form > form li > div.consent > span.checkbox.checked::before {
+  position: absolute;
+  content: "";
+  top: calc(50% - .25em);
+  left: calc(50% - .25em);
+  z-index: 20;
+  width: .5em;
+  height: .25em;
+  border-left: solid 2px rgba(255, 255, 255, 1);
+  border-bottom: solid 2px rgba(255, 255, 255, 1);
+  content: "";
+  transform: rotate(-45deg);
+}
+
+div.form > form li > div.consent > input[type=checkbox] {
+  display: none;
+}
+
+/* список выбора */
+
+div.container > div.list {
+  position: absolute;
+  z-index: 20;
+  height: 5.7em;
+}
+
+div.container > div.list > div > div > ul {
+  position: relative;
+  z-index: 20;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.container > div.list > div > div > ul > li {
+  padding: 0.4em 1em;
+  cursor: pointer;
+  transition: color .3s ease;
+}
+
+div.container > div.list > div > div > ul > li > span {
+  display: block;
+  transform: scale(.8);
+  transform-origin: left center;
+}
