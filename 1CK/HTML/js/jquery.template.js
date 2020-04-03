@@ -85,5 +85,12 @@ $(document).ready(function () {
       $(this).parent("li.more").addClass("selected");
     }
   });
+  $(".move").on("click", function (e) {
+    if ($("div.container").hasClass("opened")) {
+      $("div.container").removeClass("opened").addClass("closed");
+    }
+    $("div.baron.baron-article > div.baron-scroller").scrollTo($("#" + $(this).data("move")), 600);
+    e.preventDefault();
+  });
   return false;
 });

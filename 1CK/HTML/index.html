@@ -7,29 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0" />
   <meta name="keywords" content="http, 404" />
   <meta name="description" content="Не удается найти веб-страницу или документ" />
-  <link rel="stylesheet" href="fonts/icomoon/style.css?030420201700" />
-  <link rel="stylesheet" href="fonts/Roboto/style.css?030420201700" />
-  <link rel="stylesheet" href="css/default.css?030420201700" />
-  <link rel="stylesheet" href="css/style.css?030420201700" />
-  <link rel="stylesheet" href="css/header.css?030420201700" />
-  <link rel="stylesheet" href="css/burger.css?030420201700" />
-  <link rel="stylesheet" href="css/workspace.css?030420201700" />
-  <link rel="stylesheet" href="css/baron.css?030420201700" />
-  <link rel="stylesheet" href="css/nav.css?030420201700" />
-  <link rel="stylesheet" href="css/article.css?030420201700" />
-  <link rel="stylesheet" href="css/form.css?030420201700" />
-  <link rel="stylesheet" href="css/footer.wave.css?030420201700" />
-  <link rel="stylesheet" href="css/footer.copyright.css?030420201700" />
-  <link rel="stylesheet" href="css/developer.css?030420201700" />
-  <link rel="stylesheet" href="css/custom.css?030420201700" />
-  <script defer src="json/utheme.json?030420201700"></script>
-  <script defer src="js/jquery.js?030420201700"></script>
-  <script defer src="js/jquery.baron.js?030420201700"></script>
-  <script defer src="js/jquery.throttle-debounce.js?030420201700"></script>
-  <script defer src="js/jquery.inputmask.js?030420201700"></script>
-  <script defer src="js/jquery.scrollTo.js?030420201700"></script>
-  <script defer src="js/jquery.template.js?030420201700"></script>
-  <script defer src="js/jquery.form.js?030420201700"></script>
+  <link rel="stylesheet" href="fonts/icomoon/style.css?030420202016" />
+  <link rel="stylesheet" href="fonts/Roboto/style.css?030420202016" />
+  <link rel="stylesheet" href="css/default.css?030420202016" />
+  <link rel="stylesheet" href="css/style.css?030420202016" />
+  <link rel="stylesheet" href="css/header.css?030420202016" />
+  <link rel="stylesheet" href="css/burger.css?030420202016" />
+  <link rel="stylesheet" href="css/workspace.css?030420202016" />
+  <link rel="stylesheet" href="css/baron.css?030420202016" />
+  <link rel="stylesheet" href="css/nav.css?030420202016" />
+  <link rel="stylesheet" href="css/article.css?030420202016" />
+  <link rel="stylesheet" href="css/form.css?030420202016" />
+  <link rel="stylesheet" href="css/map.css?030420202016" />
+  <link rel="stylesheet" href="css/footer.copyright.css?030420202016" />
+  <link rel="stylesheet" href="css/developer.css?030420202016" />
+  <link rel="stylesheet" href="css/custom.css?030420202016" />
+  <script defer src="json/utheme.json?030420202016"></script>
+  <script defer src="js/jquery.js?030420202016"></script>
+  <script defer src="js/jquery.baron.js?030420202016"></script>
+  <script defer src="js/jquery.throttle-debounce.js?030420202016"></script>
+  <script defer src="js/jquery.inputmask.js?030420202016"></script>
+  <script defer src="js/jquery.scrollTo.js?030420202016"></script>
+  <script defer src="js/jquery.template.js?030420202016"></script>
+  <script defer src="js/jquery.form.js?030420202016"></script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtutn7Z9iuNsYSxef_JxtblkcwgsAIIUw"></script>
+  <script defer src="js/map.js?030420202016"></script>
   <title>HTTP 404 — не удается найти веб-страницу или документ</title>
 </head>
 
@@ -73,7 +75,7 @@
                 </span>
               </li>
               <li class="header-nav-ul-li">
-                <a class="header-nav-ul-li-element header-nav-ul-li-a" href="/contacts/" title="Контакты">
+                <a class="header-nav-ul-li-element header-nav-ul-li-a move" href="/contacts/" title="Контакты" data-move="contacts">
                   <span class="header-nav-ul-li-element-span">Контакты</span>
                 </a>
               </li>
@@ -205,7 +207,7 @@
                         </a>
                       </li>
                       <li>
-                        <a href="#" title="Контакты">
+                        <a class="move" href="#" title="Контакты" data-move="contacts">
                           <span>
                             <span>Контакты</span>
                           </span>
@@ -249,7 +251,7 @@
                 </li>
                 <!-- /article -->
                 <!-- footer -->
-                <li>
+                <li id="contacts">
                   <footer class="alignment">
                     <div id="feedback" class="form feedback">
                       <div>
@@ -320,13 +322,15 @@
                         </ol>
                       </form>
                     </div>
-
-                    <div class="footer wave">
-                      <div class="wave-div"></div>
+                    <div class="map-footer">
+                      <div class="map-footer-div">
+                        <div id="map" class="map"></div>
+                        <div class="map-footer-wave"></div>
+                      </div>
                     </div>
                     <div class="footer centering copyright">
-                      <span>© 2020 Первая Сетевая Компания</span><br />
-                      <span>Из искры возгорится пламя</span>
+                      <span>© 2020 Первая сетевая компания</span><br />
+                      <a href="maito:1ck@urbexgroup.ru" title="1ck@urbexgroup.ru">1ck@urbexgroup.ru</a>
                       <a class="developer" href="https://www.tarantul.zone/" title="разработка сайта" target="_blank" rel="noopener"></a>
                     </div>
                   </footer>
