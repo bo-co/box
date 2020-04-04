@@ -89,7 +89,6 @@ nav > ul > li > ul > li > a {
 }
 
 .header-logo {
-  margin-left: 1em;
   border: 0 !important;
 }
 
@@ -290,11 +289,11 @@ article > div.content > header blockquote {
 
 /* developer */
 footer > div.footer.copyright > a.developer::after {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(165, 165, 165, 1);
 }
 
 footer > div.footer.copyright > a.developer:hover::after {
-  color: rgba(165, 165, 165, 1);
+  color: rgba(77, 77, 77, 1);
 }
 
 /* список выбора */
@@ -395,6 +394,7 @@ div.container > div.list > div > div > ul > li:hover {
 
   .header-logo {
     max-width: 7.5em;
+    margin-left: 1em;
   }
 
   div.form > div > span,
@@ -430,6 +430,7 @@ div.container > div.list > div > div > ul > li:hover {
 
   .header-logo {
     max-width: 7.5em;
+    margin-left: 1em;
   }
 
   div.form > div > span,
@@ -464,7 +465,9 @@ div.container > div.list > div > div > ul > li:hover {
   }
 
   .header-logo {
-    max-width: 6.5em;
+    max-width: 8em;
+    margin: 0 auto;
+    padding-right: 1.5em;
   }
 
   div.form > div > span,
