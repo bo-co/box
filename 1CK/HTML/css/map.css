@@ -18,10 +18,10 @@
 
 .map-footer-wave {
   position: absolute;
-  left: 0;
+  left: -.5em;
   bottom: -.25em;
   z-index: 20;
-  width: 100%;
+  width: calc(100% + 1em);
   padding-top: 15%;
   background-image: url(../img/wave.svg?301120190201);
   background-position: 0% 100%;
