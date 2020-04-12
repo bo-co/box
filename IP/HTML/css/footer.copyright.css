@@ -10,7 +10,6 @@ footer > div.footer.copyright > a > span {
   display: inline-block;
 }
 
-
 @media (min-width : 1201px) {
   footer > div.footer.copyright {
     padding: 1.5em 0;

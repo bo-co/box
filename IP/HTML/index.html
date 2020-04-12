@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/article.css?040420201449" />
   <link rel="stylesheet" href="css/form.css?040420201449" />
   <link rel="stylesheet" href="css/footer.copyright.css?040420201449" />
+  <link rel="stylesheet" href="css/footer.contacts.css?040420201449" />
   <link rel="stylesheet" href="css/developer.css?040420201449" />
   <link rel="stylesheet" href="css/custom.css?040420201449" />
   <script defer src="json/utheme.json?040420201449"></script>
@@ -31,6 +32,10 @@
   <script defer src="js/jquery.scrollTo.js?040420201449"></script>
   <script defer src="js/jquery.template.js?040420201449"></script>
   <script defer src="js/jquery.form.js?040420201449"></script>
+
+  <script defer src="https://api-maps.yandex.ru/2.1.72/?lang=ru_RU"></script>
+  <script defer src="map/map.js?040420201449"></script>
+
   <title>HTTP 404 — не удается найти веб-страницу или документ</title>
 </head>
 
@@ -76,8 +81,8 @@
           </nav>
         </li>
         <li class="header-ul-li">
-          <a class="phone header-phone" href="tel:+74959722252" title="+7 (495) 972-22-52">
-            <span class="accent header-phone-span phone-span">972-22-52</span>
+          <a class="phone header-phone" href="tel:+74952121224" title="+7 (495) 212-12-24">
+            <span class="accent header-phone-span phone-span">212-12-24</span>
             <span class="header-phone-span-comment phone-span-comment">Бесплатная консультация</span>
           </a>
           <ol class="header-icons">
@@ -113,8 +118,8 @@
             <span class="logo aside-logo">
               <span class="aside-logo-span logo-span"></span>
             </span>
-            <a class="phone aside-phone" href="tel:+74959722252" title="+7 (495) 972-22-52">
-              <span class="accent aside-phone-span phone-span">972-22-52</span>
+            <a class="phone aside-phone" href="tel:+74952121224" title="+7 (495) 212-12-24">
+              <span class="accent aside-phone-span phone-span">212-12-24</span>
               <span class="aside-phone-span-comment phone-span-comment">Бесплатная консультация</span>
             </a>
           </div>
@@ -388,6 +393,46 @@
                         </ol>
                       </form>
                     </div>
+                  </footer>
+                  <ul class="contacts-ul">
+                    <li class="contacts-ul-li">
+                      <div id="map" class="map"></div>
+                    </li>
+                    <li class="contacts-ul-li">
+                      <ul class="contacts-ul-li-ul">
+                        <li class="contacts-ul-li-ul-li">
+                          <div class="contacts-ul-li-ul-li-div">
+                            <strong>Офис</strong><br />
+                            <span>г. Москва, Академика Королева, 13 строение 1 офис 480</span><br />
+                            <a href="https://yandex.ru/maps/?rtext=55.818877,37.618354~55.755241,37.617779&rtt=comparison" title="Схема проезда" target="_blank" rel="noopener">Схема проезда</a>
+                          </div>
+                        </li>
+                        <li class="contacts-ul-li-ul-li">
+                          <div class="contacts-ul-li-ul-li-div">
+                            <strong>Телефон</strong><br />
+                            <a href="tel:+74952121224" title="+7 (495) 212-12-24">
+                              <span>+7 (495) 212-12-24</span>
+                            </a>
+                          </div>
+                        </li>
+                        <li class="contacts-ul-li-ul-li">
+                          <div class="contacts-ul-li-ul-li-div">
+                            <strong>Режим работы</strong><br />
+                            <span>9:00 до 21:00, ежедневно</span>
+                          </div>
+                        </li>
+                        <li class="contacts-ul-li-ul-li">
+                          <div class="contacts-ul-li-ul-li-div">
+                            <strong>E-mail</strong><br />
+                            <a href="mailto:info@site.ru" title="info@site.ru">
+                              <span>info@site.ru</span>
+                            </a>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <footer class="alignment">
                     <div class="footer centering copyright">
                       <span>© 2020 INTERIOR PRICE</span><br />
                       <span>комплексные решения для создания офисного пространства</span>

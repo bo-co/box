@@ -80,8 +80,8 @@ nav > ul > li > ul > li > a {
 }
 
 .header-phone-span-comment {
-  font-size: .8em;
-  line-height: .8em;
+  font-size: .91em;
+  line-height: 1;
   color: rgba(115, 115, 115, 1);
 }
 
@@ -150,7 +150,7 @@ div.container > div.workspace > div:first-child {
 }
 
 .aside-phone-span-comment {
-  font-size: .8em;
+  font-size: .91em;
   line-height: 2;
 }
 
@@ -210,8 +210,9 @@ footer > div.footer.copyright {
 
 /* form */
 
+.contacts-ul,
 div.form {
-  background-color: rgba(244, 244, 244, 1);
+  background-color: rgba(243, 243, 243, 1);
 }
 
 div.form > div > span {
@@ -473,7 +474,7 @@ div.container > div.list > div > div > ul > li:hover {
   }
 
   div.container > div.workspace > div:last-child,
-  div.container > div.workspace > div:first-child > div.box > div:first-child {
+  div.container > div.workspace > div:first-child {
     padding-top: 4.5em;
   }
 
@@ -509,7 +510,7 @@ div.container > div.list > div > div > ul > li:hover {
   }
 
   div.container > div.workspace > div:last-child,
-  div.container > div.workspace > div:first-child > div.box > div:first-child {
+  div.container > div.workspace > div:first-child {
     padding-top: 4.5em;
   }
 
