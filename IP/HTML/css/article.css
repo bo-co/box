@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+article {
+  position: relative;
+  width: 100%;
+  background-color: inherit;
+}
+
+article > div.content {
+  position: inherit;
+  padding: 1rem;
+}
+
+article > div.content > div {
+  padding: 0.5rem 0;
+  font-size: 0.9em;
+}
+
+article > div.content > div h1,
+article > div.content > div h2,
+article > div.content > div h3,
+article > div.content > div h4,
+article > div.content > header h1,
+article > div.content > header h2,
+article > div.content > header h3,
+article > div.content > header h4 {
+  position: inherit;
+  line-height: 1;
+}
+
+article > div.content > div h2,
+article > div.content > div h3,
+article > div.content > div h4 {
+  padding: 0.5em 0;
+}
+
+article > div.content > div h1,
+article > div.content > header h1 {
+  padding: 0 0 0.5rem 0;
+}
+
+article > div.content > div blockquote,
+article > div.content > header blockquote {
+  font-size: 1.1em;
+  line-height: 1.2;
+}
+
+article > div.content > div ul {
+  list-style: disc;
+}

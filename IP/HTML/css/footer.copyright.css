@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+footer > div.footer.copyright {
+  font-size: 0.8em;
+}
+
+footer > div.footer.copyright > span,
+footer > div.footer.copyright > a,
+footer > div.footer.copyright > a > span {
+  display: inline-block;
+}
+
+
+@media (min-width : 1201px) {
+  footer > div.footer.copyright {
+    padding: 1.5em 0;
+  }
+}
+
+@media (min-width : 961px) and (max-width : 1200px) {
+  footer > div.footer.copyright {
+    padding: 1.5em 15em 1.5em 0;
+  }
+}
+
+@media (min-width : 721px) and (max-width : 960px) {
+  footer > div.footer.copyright {
+    padding: 1.5em 0;
+  }
+}
+
+@media (min-width : 481px) and (max-width : 720px) {
+  footer > div.footer.copyright {
+    padding: 1.5em 15em 1.5em 0;
+  }
+}
+
+@media (max-width : 480px) {
+  footer > div.footer.copyright {
+    padding: 1.5em 0;
+  }
+}

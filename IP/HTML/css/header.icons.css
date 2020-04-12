@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+.header-icons-a,
+.header-icons-info,
+.informer-span,
+.informer-a,
+.informer-a-span {
+  display: block;
+}
+
+.header-icons,
+.header-icons-a,
+.header-icons-li {
+  position: relative;
+}
+
+.header-icons-a::before,
+.header-icons-info,
+.informer {
+  position: absolute;
+}
+
+.header-icons {
+  display: flex;
+  padding: 0 0 0 1em;
+  list-style: none;
+}
+
+.header-icons-li,
+.header-icons-a {
+  height: 2.5em;
+}
+
+.header-icons-li:hover > .informer {
+  display: block;
+}
+
+.header-icons-a {
+  padding-left: 2.5em;
+}
+
+.header-icons-a::before {
+  top: calc(50% - .7em);
+  left: 0;
+  z-index: 1;
+  width: 2.5em;
+  font-family: "icomoon" !important;
+  text-align: center;
+  transform: scale(2);
+  transform-origin: center center;
+}
+
+.header-icons-a::after {
+  display: none;
+  padding-top: 1em;
+  font-weight: 500;
+  transform: scale(.9);
+  transform-origin: center center;
+}
+
+.header-icon-basket::after {
+  content: "Корзина";
+}
+
+.header-icon-favourites::after {
+  content: "Избранное";
+}
+
+.header-icon-compare::after {
+  content: "Сравнение";
+}
+
+.header-icons-a:hover > .header-icons-info {
+  transform: scale(.65);
+}
+
+.header-icons-info {
+  width: 2em;
+  height: 2em;
+  bottom: calc(50% - .5em);
+  left: 1.25em;
+  z-index: 2;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  line-height: 1.85;
+  border-radius: 50%;
+  transform: scale(.6);
+  transform-origin: left center;
+  transition: all .3s ease;
+}
+
+.informer {
+  display: none;
+  top: calc(100% + .25em);
+  right: 0;
+  z-index: 10;
+  padding: .5em 1.5em;
+  text-align: center;
+}
+
+.informer-span,
+.informer-a-span {
+  white-space: nowrap;
+}
+
+.informer-span {
+  font-size: .8em;
+  margin: .5em 0;
+}
+
+.informer-span::after {
+  content: "\0000a0₽";
+}
+
+.informer-a {
+  margin: .5em 0;
+  padding: .5em 0;
+  font-weight: 500;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.informer-a-span {
+  font-size: .9em;
+}

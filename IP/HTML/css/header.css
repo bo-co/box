@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+.header-nav-ul-li-element,
+.header-nav-ul-li-element-span,
+.informer-span,
+.informer-a,
+.informer-a-span,
+.header-submenu-li-element,
+.header-submenu-li-element-span {
+  display: block;
+}
+
+.header::before,
+.header-ul,
+.header-nav-ul,
+.header-logo {
+  width: 100%;
+}
+
+.header-ul,
+.header-ul-li,
+.header-logo,
+.header-nav,
+.header-nav-ul,
+.header-nav-ul-li,
+.header-nav-ul-li-element {
+  height: 100%;
+}
+
+.header-ul,
+.header-nav-ul,
+.header-nav-ul-li,
+.header-phone {
+  position: relative;
+  z-index: 10;
+}
+
+.header::before,
+.informer,
+.header-submenu {
+  position: absolute;
+}
+
+.header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.header::before {
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 1px;
+  content: "";
+}
+
+.header-ul,
+.header-ul-li,
+.header-nav-ul,
+.header-nav-ul-li-element {
+  display: flex;
+}
+
+.header-ul,
+.header-nav-ul,
+.header-submenu {
+  list-style: none;
+}
+
+.header-ul {
+  justify-content: flex-end;
+}
+
+.header-ul-li,
+.header-nav-ul-li-element {
+  align-items: center;
+}
+
+/* навигация в шапке */
+
+.header-ul,
+.header-nav,
+.header-nav-ul,
+.header-nav-ul-li-element,
+.header-nav-ul-li-element-span,
+.header-submenu {
+  padding: 0;
+}
+
+.header-nav-ul,
+.header-submenu {
+  margin: 0;
+}
+
+.header-nav-ul-li:not(:last-child) {
+  margin-right: 4%;
+}
+
+.header-nav-ul-li-element-span {
+  color: inherit;
+  transform: scale(.9);
+  transform-origin: left center;
+  white-space: nowrap;
+}
+
+.header-submenu {
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 20;
+}
+
+.header-submenu-li-element {
+  padding: .25em 1em;
+  transition: color .3s ease;
+}
+
+.header-submenu-li-element-span {
+  padding: .25em 0;
+  white-space: nowrap;
+  transform: scale(.8);
+  transform-origin: left center;
+}
+
+/* логотип в шапке */
+
+.logo-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header-ul-li-logo,
+.header-ul-li-nav {
+  flex-grow: 1;
+}
+
+.header-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.header-logo-span {
+  height: 100%;
+  background-image: url(../img/logo.svg?280320201449);
+}
+
+@media (min-width : 1201px) {
+  .logo-header {
+    width: 16em;
+    height: 100%;
+    padding: 0 2.5em;
+  }
+
+  .header-ul-li-logo,
+  .header-ul-li-burger {
+    display: none;
+  }
+
+  .header-nav-ul-li:hover > .header-submenu {
+    display: block;
+  }
+}
+
+@media (min-width : 961px) and (max-width : 1200px) {
+  .logo-header {
+    width: 16em;
+    height: 100%;
+    padding: 0 2.5em;
+  }
+
+  .header-ul-li-logo,
+  .header-ul-li-nav,
+  .header-ul-li-burger {
+    display: none;
+  }
+
+  .header-nav-ul-li:hover > .header-submenu {
+    display: block;
+  }
+}
+
+@media (min-width : 721px) and (max-width : 960px) {
+  .header-ul-li-nav {
+    display: none;
+  }
+}
+
+@media (min-width : 481px) and (max-width : 720px) {
+
+  .header-phone,
+  .header-ul-li-nav {
+    display: none;
+  }
+}
+
+@media (max-width : 480px) {
+  .header {
+    height: 3.5em;
+  }
+
+  .header-phone,
+  .header-ul-li-nav {
+    display: none;
+  }
+}
