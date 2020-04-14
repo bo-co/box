@@ -110,7 +110,7 @@ $(document).ready(function () {
       setTimeout(function () {
         loadJS("map/map.js?" + $.now(), true);
         $("input[type=tel]").inputmask("+7 (999) 999-99-99");
-      }, 300);
+      }, 600);
       isLoad = true;
     }
   });
