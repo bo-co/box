@@ -230,7 +230,6 @@ $(document).ready(function () {
     }
   });
   clear($(".field"));
-  $("input[type=tel]").inputmask("+7 (999) 999-99-99");
   return false;
 });
 

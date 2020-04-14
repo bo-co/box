@@ -1,11 +1,3 @@
-/*
- * Input Mask Core
- * http://github.com/RobinHerbots/jquery.inputmask
- * Copyright (c) 2010 -	Robin Herbots
- * Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
- * Version: 0.0.0-dev
- */
-
 (function($) {
 	function Inputmask(options) {
 		this.el = undefined;

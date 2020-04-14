@@ -103,17 +103,16 @@ $(document).ready(function () {
     $("div.baron.baron-article > div.baron-scroller").scrollTo($("#" + $(this).data("move")), 600);
     e.preventDefault();
   });
-
-
   $("div.baron.baron-article > div.baron-scroller").scroll(function () {
     if ($("div.baron.baron-article > div.baron-scroller").scrollTop() > isInit && !isLoad) {
       loadJS("https://api-maps.yandex.ru/2.1.72/?lang=ru_RU", true);
+      loadJS("js/jquery.inputmask.js?" + $.now(), true);
       setTimeout(function () {
         loadJS("map/map.js?" + $.now(), true);
-      }, 600);
+        $("input[type=tel]").inputmask("+7 (999) 999-99-99");
+      }, 300);
       isLoad = true;
     }
   });
-
   return false;
 });
