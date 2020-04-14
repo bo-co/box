@@ -427,6 +427,14 @@ div.container > div.list > div > div > ul > li:hover {
   .header-phone {
     display: none;
   }
+
+  div.form > form ul > li > div.accent {
+    text-align: right;
+  }
+
+  div.form > form li > div.accent > span {
+    transform-origin: right center;
+  }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
@@ -459,6 +467,14 @@ div.container > div.list > div > div > ul > li:hover {
 
   .aside-phone {
     display: none;
+  }
+
+  div.form > form ul > li > div.accent {
+    text-align: right;
+  }
+
+  div.form > form li > div.accent > span {
+    transform-origin: right center;
   }
 }
 
@@ -495,6 +511,14 @@ div.container > div.list > div > div > ul > li:hover {
   .aside-phone,
   .aside-logo {
     display: none;
+  }
+
+  div.form > form ul > li > div.accent {
+    text-align: right;
+  }
+
+  div.form > form li > div.accent > span {
+    transform-origin: right center;
   }
 }
 
@@ -535,6 +559,14 @@ div.container > div.list > div > div > ul > li:hover {
   .aside-logo {
     display: none;
   }
+
+  div.form > form ul > li > div.accent {
+    text-align: right;
+  }
+
+  div.form > form li > div.accent > span {
+    transform-origin: right center;
+  }
 }
 
 @media (max-width : 480px) {
@@ -573,5 +605,13 @@ div.container > div.list > div > div > ul > li:hover {
 
   .aside-logo {
     display: none;
+  }
+
+  div.form > form ul > li > div.accent {
+    text-align: left;
+  }
+
+  div.form > form li > div.accent > span {
+    transform-origin: left center;
   }
 }
