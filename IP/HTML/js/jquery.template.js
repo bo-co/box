@@ -4,7 +4,18 @@ var vhCSS = null,
   baron__choose = null,
   baron__scroller = "div.baron > div.baron-scroller",
   baron__bar = "div.baron > div.baron-track > div.baron-bar",
-  menuHeight = null;
+  menuHeight = null,
+  isLoad = false,
+  isInit = parseInt($("div.baron.baron-article > div.baron-scroller > ul").outerHeight() - $("li.footer-li").outerHeight() - $(window).innerHeight() + $("div.header").outerHeight());
+
+function loadJS(source, order) {
+  "use strict";
+  var s = document.getElementsByTagName('head')[0],
+    sc = document.createElement('script');
+  sc.acync = order;
+  sc.src = source;
+  s.appendChild(sc);
+}
 
 function loadCSS(source, type) {
   "use strict";
@@ -92,5 +103,17 @@ $(document).ready(function () {
     $("div.baron.baron-article > div.baron-scroller").scrollTo($("#" + $(this).data("move")), 600);
     e.preventDefault();
   });
+
+
+  $("div.baron.baron-article > div.baron-scroller").scroll(function () {
+    if ($("div.baron.baron-article > div.baron-scroller").scrollTop() > isInit && !isLoad) {
+      loadJS("https://api-maps.yandex.ru/2.1.72/?lang=ru_RU", true);
+      setTimeout(function () {
+        loadJS("map/map.js?" + $.now(), true);
+      }, 600);
+      isLoad = true;
+    }
+  });
+
   return false;
 });
