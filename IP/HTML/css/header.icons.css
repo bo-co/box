@@ -108,7 +108,8 @@
 }
 
 .informer-span::after {
-  /* content: "\0000a0₽"; */
+  font-family: "content", Arial, Tahoma, Verdana, sans-serif;
+  content: "\0000a0₽";
 }
 
 .informer-a {
