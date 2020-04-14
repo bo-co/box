@@ -108,7 +108,7 @@
 }
 
 .informer-span::after {
-  content: "\0000a0₽";
+  /* content: "\0000a0₽"; */
 }
 
 .informer-a {
