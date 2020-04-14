@@ -238,7 +238,6 @@ div.form > form ul > li > div.accent {
   background-color: rgba(255, 255, 255, 0);
   color: rgba(25, 25, 25, 1);
   font-weight: 900;
-  text-align: right;
 }
 
 div.form > form li > div.accent > span::before,

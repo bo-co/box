@@ -115,6 +115,14 @@
   .contacts-ul-li-ul {
     padding: 0 1rem .5rem .5rem;
   }
+
+  div.form > form ul > li > div.accent {
+    text-align: right;
+  }
+
+  div.form > form li > div.accent > span {
+    transform-origin: right center;
+  }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
@@ -124,6 +132,14 @@
 
   .contacts-ul-li-ul {
     padding: 0 1rem .5rem .5rem;
+  }
+
+  div.form > form ul > li > div.accent {
+    text-align: right;
+  }
+
+  div.form > form li > div.accent > span {
+    transform-origin: right center;
   }
 }
 
@@ -135,6 +151,14 @@
   .contacts-ul-li-ul {
     padding: 0 1rem .5rem .5rem;
   }
+
+  div.form > form ul > li > div.accent {
+    text-align: right;
+  }
+
+  div.form > form li > div.accent > span {
+    transform-origin: right center;
+  }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
@@ -145,6 +169,14 @@
   .contacts-ul-li-ul {
     padding: 0 1rem .5rem .5rem;
   }
+
+  div.form > form ul > li > div.accent {
+    text-align: right;
+  }
+
+  div.form > form li > div.accent > span {
+    transform-origin: right center;
+  }
 }
 
 @media (max-width : 480px) {
@@ -154,5 +186,13 @@
 
   .contacts-ul-li-ul {
     padding: .5rem 1rem 1rem 1rem;
+  }
+
+  div.form > form ul > li > div.accent {
+    text-align: left;
+  }
+
+  div.form > form li > div.accent > span {
+    transform-origin: left center;
   }
 }
