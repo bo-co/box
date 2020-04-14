@@ -17,7 +17,7 @@ function init() {
     hintContent: null
   }, {
     iconLayout: 'default#image',
-    iconImageHref: 'https://deltaclinic.ru/local/templates/deltaclinic_2019/img/finish.svg',
+    iconImageHref: 'https://bo-co.github.io/box/IP/HTML/img/place.svg',
     iconImageSize: [48, 48],
     iconImageOffset: [-24, -32]
   }));

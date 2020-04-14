@@ -102,7 +102,7 @@ div.form > form li > div.accent > span {
   position: relative;
   top: 1em;
   transform: scale(1.2);
-  transform-origin: left center;
+  transform-origin: right center;
   white-space: nowrap;
 }
 

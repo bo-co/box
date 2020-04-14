@@ -106,7 +106,7 @@ ul.burger > li {
 /* workspace */
 
 div.container > div.workspace > div:first-child {
-  background-color: rgba(240, 240, 240, 1);
+  background-color: rgba(248, 248, 248, 1);
 }
 
 /* div.container > div.workspace > div:first-child::before {
@@ -238,6 +238,7 @@ div.form > form ul > li > div.accent {
   background-color: rgba(255, 255, 255, 0);
   color: rgba(25, 25, 25, 1);
   font-weight: 900;
+  text-align: right;
 }
 
 div.form > form li > div.accent > span::before,
@@ -380,6 +381,20 @@ div.container > div.list > div > div > ul > li:hover {
 .tail::before {
   border-top: 1px solid rgba(240, 240, 240, 1);
   border-left: 1px solid rgba(240, 240, 240, 1);
+}
+
+.contacts-header {
+  border-bottom: solid 1em rgba(209, 74, 67, 1);
+}
+
+.contacts-header-div-span,
+.contacts-header-div::before,
+.contacts-header-div-span::before {
+  background-color: rgba(209, 74, 67, 1);
+}
+
+.contacts-header-div-span {
+  color: rgba(255, 255, 255, 1);
 }
 
 @media (min-width : 1201px) {
