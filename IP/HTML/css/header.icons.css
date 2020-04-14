@@ -92,7 +92,6 @@
 .informer {
   display: none;
   top: calc(100% + .25em);
-  right: 0;
   z-index: 10;
   padding: .5em 1.5em;
   text-align: center;
@@ -121,4 +120,34 @@
 
 .informer-a-span {
   font-size: .9em;
+}
+
+@media (min-width : 1201px) {
+  .informer {
+    right: 0;
+  }
+}
+
+@media (min-width : 961px) and (max-width : 1200px) {
+  .informer {
+    right: 0;
+  }
+}
+
+@media (min-width : 721px) and (max-width : 960px) {
+  .informer {
+    right: 0;
+  }
+}
+
+@media (min-width : 481px) and (max-width : 720px) {
+  .informer {
+    right: 0;
+  }
+}
+
+@media (max-width : 480px) {
+  .informer {
+    right: -2rem;
+  }
 }

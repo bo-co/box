@@ -17,7 +17,7 @@ function init() {
     hintContent: null
   }, {
     iconLayout: 'default#image',
-    iconImageHref: 'https://bo-co.github.io/box/IP/HTML/img/place.svg',
+    iconImageHref: 'https://bo-co.github.io/box/IP/HTML/img/place.svg?140420201516',
     iconImageSize: [48, 48],
     iconImageOffset: [-24, -32]
   }));

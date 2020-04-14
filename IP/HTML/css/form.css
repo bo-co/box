@@ -286,7 +286,7 @@ div.container > div.list > div > div > ul {
 }
 
 div.container > div.list > div > div > ul > li {
-  padding: 0.4em 1em;
+  padding: .25em 1em;
   cursor: pointer;
   transition: color .3s ease;
 }

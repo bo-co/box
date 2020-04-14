@@ -7,7 +7,7 @@ body {
 
 a {
   color: rgba(189, 54, 47, 1);
-  border-bottom: 1px solid rgba(199, 64, 57, .5);
+  border-bottom: 1px solid rgba(189, 54, 47, .5);
 }
 
 a:hover {
@@ -43,7 +43,7 @@ nav > ul > li > ul > li > a {
 }
 
 .header-nav-ul-li-span {
-  color: rgba(199, 64, 57, 1);
+  color: rgba(189, 54, 47, 1);
 }
 
 .header-nav-ul-li-element {
@@ -76,7 +76,7 @@ nav > ul > li > ul > li > a {
 }
 
 .header-phone:hover {
-  color: rgba(199, 64, 57, 1);
+  color: rgba(189, 54, 47, 1);
 }
 
 .header-phone-span-comment {
@@ -177,7 +177,7 @@ div.container > div.workspace > div:first-child > div.box > div:last-child > div
 div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > ul > li > div > span,
 div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:nth-child(2) > nav > ul > li > div > span,
 div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:nth-child(2) > nav > ul > li > ul > li > div > span {
-  color: rgba(199, 64, 57, 1);
+  color: rgba(189, 54, 47, 1);
 }
 
 div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:nth-child(2) > nav > ul > li > a:hover {
@@ -261,7 +261,7 @@ div.form > form li > div > label > input:focus {
 }
 
 div.form > form ul > li > div > label > input.error {
-  border: 1px solid rgba(199, 64, 57, 1) !important;
+  border: 1px solid rgba(189, 54, 47, 1) !important;
 }
 
 div.form > form li > div.choose::after,
@@ -275,13 +275,13 @@ div.form > form li > div > button {
   font-size: .8em;
   line-height: 3.125em;
   text-transform: uppercase;
-  background-color: rgba(199, 64, 57, 1);
+  background-color: rgba(189, 54, 47, 1);
   color: rgba(255, 255, 255, 1);
   font-weight: 900;
 }
 
 div.form > form li > div > button:hover {
-  background-color: rgba(136, 28, 22, 1);
+  background-color: rgba(159, 24, 17, 1);
 }
 
 div.form > form li > div,
@@ -307,7 +307,7 @@ article > div.content > div blockquote,
 article > div.content > header blockquote {
   font-family: "accent", Arial, Tahoma, Verdana, sans-serif;
   font-weight: 500;
-  color: rgba(199, 64, 57, 1);
+  color: rgba(189, 54, 47, 1);
 }
 
 /* developer */
@@ -323,7 +323,7 @@ footer > div.footer.copyright > a.developer:hover::after {
 
 div.container > div.list {
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 0 10px rgba(77, 77, 77, .1);
+  box-shadow: 0 0 10px rgba(25, 25, 25, .1);
   border-radius: .25em;
   overflow: hidden;
 }
@@ -334,13 +334,13 @@ div.container > div.list > div > div > ul > li {
 }
 
 div.container > div.list > div > div > ul > li:hover {
-  color: rgba(199, 64, 57, 1);
+  color: rgba(189, 54, 47, 1);
 }
 
 /* header icons */
 
 .header-icons-info {
-  background-color: rgba(199, 64, 57, 1);
+  background-color: rgba(189, 54, 47, 1);
   color: rgba(255, 255, 255, 1);
   border: solid 1px rgba(255, 255, 255, 1);
 }
@@ -357,19 +357,19 @@ div.container > div.list > div > div > ul > li:hover {
 
 .informer {
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 0 10px rgba(115, 115, 115, .1);
+  box-shadow: 0 0 10px rgba(25, 25, 25, .1);
   border-radius: .25em;
 }
 
 .informer-a {
-  background-color: rgba(199, 64, 57, 1);
+  background-color: rgba(189, 54, 47, 1);
   color: rgba(255, 255, 255, 1);
   border-radius: .25em;
   font-weight: 800;
 }
 
 .informer-a:hover {
-  background-color: rgba(136, 28, 22, 1);
+  background-color: rgba(159, 24, 17, 1);
   color: rgba(255, 255, 255, 1);
 }
 
@@ -379,18 +379,18 @@ div.container > div.list > div > div > ul > li:hover {
 }
 
 .tail::before {
-  border-top: 1px solid rgba(240, 240, 240, 1);
-  border-left: 1px solid rgba(240, 240, 240, 1);
+  border-top: 1px solid rgba(25, 25, 25, .05);
+  border-left: 1px solid rgba(25, 25, 25, .05);
 }
 
 .contacts-header {
-  border-bottom: solid 1em rgba(199, 64, 57, 1);
+  border-bottom: solid 1em rgba(189, 54, 47, 1);
 }
 
 .contacts-header-div-span,
 .contacts-header-div::before,
 .contacts-header-div-span::before {
-  background-color: rgba(199, 64, 57, 1);
+  background-color: rgba(189, 54, 47, 1);
 }
 
 .contacts-header-div-span {

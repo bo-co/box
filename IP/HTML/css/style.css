@@ -85,10 +85,6 @@ div.container {
   left: 1em;
 }
 
-.tail-right::before {
-  right: 1em;
-}
-
 /* 60px — базовый отступ 
 внутренние и внешние отступы делятся или умножаются на 2
 120px — 60px — 30px */
@@ -109,6 +105,10 @@ div.container {
     right: 0;
     top: calc(50% - 1.5em);
     margin: 0;
+  }
+
+  .tail-right::before {
+    right: 1em;
   }
 }
 
@@ -133,6 +133,10 @@ div.container {
     top: calc(50% - 1.5em);
     margin: 0;
   }
+
+  .tail-right::before {
+    right: 1em;
+  }
 }
 
 /* 40px — базовый отступ 
@@ -155,6 +159,10 @@ div.container {
     right: 0;
     top: calc(50% - 1.5em);
     margin: 0;
+  }
+
+  .tail-right::before {
+    right: 1em;
   }
 }
 
@@ -179,6 +187,10 @@ div.container {
     top: calc(50% - 1.5em);
     margin: 0;
   }
+
+  .tail-right::before {
+    right: 1em;
+  }
 }
 
 /* 20px — базовый отступ 
@@ -199,5 +211,9 @@ div.container {
   ol.social {
     position: relative;
     margin: 0.5rem 0 0 0;
+  }
+
+  .tail-right::before {
+    right: calc(1em + 2rem);
   }
 }
