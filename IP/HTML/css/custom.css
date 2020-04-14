@@ -80,7 +80,7 @@ nav > ul > li > ul > li > a {
 }
 
 .header-phone-span-comment {
-  font-size: .91em;
+  font-size: .885em;
   line-height: 1;
   color: rgba(115, 115, 115, 1);
 }
@@ -136,7 +136,7 @@ div.container > div.workspace > div:first-child {
 .header-phone-span,
 .aside-phone-span {
   font-weight: 900;
-  transform: scale(1.18);
+  transform: scale(1.23);
 }
 
 .header-phone-span {
@@ -529,6 +529,10 @@ div.container > div.list > div > div > ul > li:hover {
     padding-top: 4.5em;
   }
 
+  div.container > div.workspace > div:first-child > div.box > div:first-child {
+    background-color: rgba(238, 238, 238, 1);
+  }
+
   .aside-logo {
     display: none;
   }
@@ -562,6 +566,10 @@ div.container > div.list > div > div > ul > li:hover {
   div.container > div.workspace > div:first-child,
   div.container > div.workspace > div:last-child {
     padding-top: 4.5em;
+  }
+
+  div.container > div.workspace > div:first-child > div.box > div:first-child {
+    background-color: rgba(238, 238, 238, 1);
   }
 
   .aside-logo {
