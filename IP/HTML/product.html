@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0" />
+  <meta name="keywords" content="предложение, торговое" />
+  <meta name="description" content="Торговое предложение" />
+  <link rel="stylesheet" href="fonts/icomoon/style.css?140420202103" />
+  <link rel="stylesheet" href="fonts/OpenSans/style.css?140420202103" />
+  <link rel="stylesheet" href="fonts/Geometria/style.css?140420202103" />
+  <link rel="stylesheet" href="fonts/Roboto/style.css?140420202103" />
+  <link rel="stylesheet" href="css/default.css?140420202103" />
+  <link rel="stylesheet" href="css/style.css?140420202103" />
+  <link rel="stylesheet" href="css/header.css?140420202103" />
+  <link rel="stylesheet" href="css/header.icons.css?140420202103" />
+  <link rel="stylesheet" href="css/burger.css?140420202103" />
+  <link rel="stylesheet" href="css/workspace.css?140420202103" />
+  <link rel="stylesheet" href="css/baron.css?140420202103" />
+  <link rel="stylesheet" href="css/nav.css?140420202103" />
+  <link rel="stylesheet" href="css/article.css?140420202103" />
+  <link rel="stylesheet" href="css/form.css?140420202103" />
+  <link rel="stylesheet" href="css/footer.copyright.css?140420202103" />
+  <link rel="stylesheet" href="css/footer.contacts.css?140420202103" />
+  <link rel="stylesheet" href="css/developer.css?140420202103" />
+  <link rel="stylesheet" href="css/custom.css?140420202103" />
+  <script defer src="json/utheme.json?140420202103"></script>
+  <script defer src="js/jquery.js?140420202103"></script>
+  <script defer src="js/jquery.baron.js?140420202103"></script>
+  <script defer src="js/jquery.throttle-debounce.js?140420202103"></script>
+  <script defer src="js/jquery.scrollTo.js?140420202103"></script>
+  <script defer src="js/jquery.template.js?140420202103"></script>
+  <script defer src="js/jquery.form.js?140420202103"></script>
+
+  <!-- тороговое предложение :: начало -->
+  <link rel="stylesheet" href="css/swiper.css?150320201418" />
+  <link rel="stylesheet" href="css/product.css?150320201418" />
+
+  <script defer src="js/jquery.swiper.js?150320201418"></script>
+  <script defer src="js/jquery.product.js?150320201418"></script>
+  <!-- тороговое предложение :: конец -->
+
+  <title>Торговое предложение</title>
+</head>
+
+<body onresize="isResize();" onload="isResize();">
+  <div class="container">
+    <!-- header -->
+    <div class="header">
+      <ul class="header-ul centering">
+        <li class="header-ul-li header-ul-li-logo">
+          <span class="logo header-logo">
+            <span class="header-logo-span logo-span"></span>
+          </span>
+        </li>
+        <li class="header-ul-li header-ul-li-nav">
+          <nav class="header-nav">
+            <ul class="header-nav-ul">
+              <li class="header-nav-ul-li">
+                <a class="header-nav-ul-li-element header-nav-ul-li-a" href="#" title="Реализованные проекты">
+                  <span class="header-nav-ul-li-element-span">Реализованные проекты</span>
+                </a>
+              </li>
+              <li class="header-nav-ul-li">
+                <a class="header-nav-ul-li-element header-nav-ul-li-a" href="#" title="Доставка">
+                  <span class="header-nav-ul-li-element-span">Доставка</span>
+                </a>
+              </li>
+              <li class="header-nav-ul-li">
+                <a class="header-nav-ul-li-element header-nav-ul-li-a" href="#" title="Оплата">
+                  <span class="header-nav-ul-li-element-span">Оплата</span>
+                </a>
+              </li>
+              <li class="header-nav-ul-li">
+                <span class="header-nav-ul-li-element header-nav-ul-li-span">
+                  <span class="header-nav-ul-li-element-span">Сборка</span>
+                </span>
+              </li>
+              <li class="header-nav-ul-li">
+                <a class="header-nav-ul-li-element header-nav-ul-li-a move" href="#" title="Контакты" data-move="feedback">
+                  <span class="header-nav-ul-li-element-span">Контакты</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </li>
+        <li class="header-ul-li">
+          <a class="phone header-phone" href="tel:+74952121224" title="+7 (495) 212-12-24">
+            <span class="accent header-phone-span phone-span">212-12-24</span>
+          </a>
+          <ol class="header-icons">
+            <li class="header-icons-li">
+              <a class="header-icons-a header-icon-basket" href="#" title="Корзина">
+                <span class="header-icons-info">6</span>
+              </a>
+              <div class="informer tail tail-right">
+                <span class="informer-span">В корзине 6 товаров на 5 090</span>
+                <a class="informer-a" href="#" title="Оформить заказ">
+                  <span class="informer-a-span accent">Оформите заказ</span>
+                </a>
+              </div>
+            </li>
+          </ol>
+        </li>
+        <li class="header-ul-li header-ul-li-burger">
+          <ul class="burger">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /header -->
+    <!-- workspace -->
+    <div class="workspace">
+      <div>
+        <div class="box">
+          <div>
+            <span class="logo aside-logo">
+              <span class="aside-logo-span logo-span"></span>
+            </span>
+            <a class="phone aside-phone" href="tel:+74952121224" title="+7 (495) 212-12-24">
+              <span class="accent aside-phone-span phone-span">212-12-24</span>
+            </a>
+          </div>
+          <div class="baron baron-nav">
+            <div class="baron-scroller">
+              <ul>
+                <li>
+                  <nav>
+                    <ul>
+                      <li class="more">
+                        <a href="#" title="Офисные кресла">
+                          <span>
+                            <span>Офисные кресла</span>
+                          </span>
+                        </a>
+                        <span></span>
+                        <ul>
+                          <li>
+                            <a href="#" title="Для руководителей">
+                              <span>
+                                <span>Для руководителей</span>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" title="Для персонала">
+                              <span>
+                                <span>Для персонала</span>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" title="Ортопедические">
+                              <span>
+                                <span>Ортопедические</span>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" title="Детские">
+                              <span>
+                                <span>Детские</span>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="more selected">
+                        <a href="#" title="Офисные стулья">
+                          <span>
+                            <span>Офисные стулья</span>
+                          </span>
+                        </a>
+                        <span></span>
+                        <ul>
+                          <li>
+                            <a href="#" title="Для руководителей">
+                              <span>
+                                <span>Для руководителей</span>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <div>
+                              <span>
+                                <span>Для персонала</span>
+                              </span>
+                            </div>
+                          </li>
+                          <li>
+                            <a href="#" title="Ортопедические">
+                              <span>
+                                <span>Ортопедические</span>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" title="Детские">
+                              <span>
+                                <span>Детские</span>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#" title="Рабочее место руководителя">
+                          <span>
+                            <span>Рабочее место руководителя</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="more">
+                        <a href="#" title="Мобильные мебельные решения">
+                          <span>
+                            <span>Мобильные мебельные решения</span>
+                          </span>
+                        </a>
+                        <span></span>
+                        <ul>
+                          <li>
+                            <a href="#" title="Мебель для зон ожиданий">
+                              <span>
+                                <span>Мебель для зон ожиданий</span>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#" title="Мебель для актовых залов">
+                          <span>
+                            <span>Мебель для актовых залов</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" title="Мебель для концертных залов">
+                          <span>
+                            <span>Мебель для концертных залов</span>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </li>
+                <li>
+                  <nav>
+                    <ul>
+                      <li>
+                        <a href="#" title="Реализованные проекты">
+                          <span>
+                            <span>Реализованные проекты</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" title="Доставка">
+                          <span>
+                            <span>Доставка</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" title="Оплата">
+                          <span>
+                            <span>Оплата</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <div>
+                          <span>
+                            <span>Сборка</span>
+                          </span>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="move" href="#" title="Контакты" data-move="feedback">
+                          <span>
+                            <span>Контакты</span>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </li>
+              </ul>
+            </div>
+            <div class="baron-track">
+              <div class="baron-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="box">
+          <span></span>
+          <div></div>
+          <div class="baron baron-article">
+            <div class="baron-scroller">
+              <ul>
+                <!-- article -->
+                <li>
+                  <article>
+                    <div class="content">
+                      <header class="centering">
+                        <h1>
+                          <span class="product-name-span">СТОЛ КРИВОЛИНЕЙНЫЙ AVANCE 6С.020Л</span><span class="product-name-span">, </span><span class="product-name-span">Шамони темный</span>
+                        </h1>
+                      </header>
+                    </div>
+
+
+                    <!-- тороговое предложение :: начало -->
+                    <div class="product-description alignment">
+                      <div class="product-gallery centering">
+                        <div class="product-gallery-wrapper">
+                          <div class="product-gallery-wrapper-div">
+                            <div class="product-gallery-swiper-container swiper-container">
+                              <div class="swiper-wrapper">
+                                <div class="product-gallery-swiper-slide swiper-slide" style="background-image: url(img/other_1906_1.jpeg)"></div>
+                                <div class="product-gallery-swiper-slide swiper-slide" style="background-image: url(img/other_1906_2.jpeg)"></div>
+                                <div class="product-gallery-swiper-slide swiper-slide" style="background-image: url(img/other_1906_3.jpeg)"></div>
+                              </div>
+                              <div class="product-swiper-container-scrollbar swiper-scrollbar"></div>
+                              <div class="product-swiper-container-pagination swiper-pagination"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-gallery-wrapper-thumbs swiper-container">
+                          <div class="swiper-wrapper">
+                            <div class="product-gallery-thumbs-swiper-slide swiper-slide" style="background-image: url(img/other_1906_1.jpeg)"></div>
+                            <div class="product-gallery-thumbs-swiper-slide swiper-slide" style="background-image: url(img/other_1906_2.jpeg)"></div>
+                            <div class="product-gallery-thumbs-swiper-slide swiper-slide" style="background-image: url(img/other_1906_3.jpeg)"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-description alignment">
+                      <ul class="product-tabs centering">
+                        <li class="buy-info">
+                          <div class="buy-info-div">
+                            <div class="buy-info-div-properties">
+                              <div class="buy-info-div-colors">
+                                <span class="buy-info-div-colors-span">Доступные цвета:</span>
+                              </div>
+                              <ul class="buy-info-div-colors-ul">
+                                <li class="buy-info-div-colors-ul-li">
+                                  <a class="buy-info-div-colors-ul-li-a" href="#" title="Шамони светлый">
+                                    <img class="buy-info-div-colors-ul-li-a-img" src="img/dub_shamoni_svet.jpg" alt="Шамони светлый" />
+                                  </a>
+                                </li>
+                                <li class="buy-info-div-colors-ul-li">
+                                  <span class="buy-info-div-colors-ul-li-span">
+                                    <img class="buy-info-div-colors-ul-li-a-img" src="img/dub_shamoni_tem.jpg" alt="Шамони темный" />
+                                  </span>
+                                </li>
+                                <li class="buy-info-div-colors-ul-li">
+                                  <a class="buy-info-div-colors-ul-li-a" href="#" title="Белый">
+                                    <img class="buy-info-div-colors-ul-li-a-img" src="img/White.jpg" alt="Белый" />
+                                  </a>
+                                </li>
+                                <li class="buy-info-div-colors-ul-li">
+                                  <a class="buy-info-div-colors-ul-li-a" href="#" title="Венге">
+                                    <img class="buy-info-div-colors-ul-li-a-img" src="img/Venge.jpg" alt="Венге" />
+                                  </a>
+                                </li>
+                              </ul>
+                              <div class="buy-info-div-form">
+                                <div class="buy-info-div-form-price">
+                                  <span class="buy-info-div-form-price-value">123 456</span>
+                                  <span class="buy-info-div-form-price-unit">за 1 шт</span>
+                                </div>
+                                <form class="product-80" name="application" method="post" action="#">
+                                  <div class="buy-info-div-form-quantity">
+                                    <button class="product-quantity-button minus" type="button" data-form="product-80"></button>
+                                    <label>
+                                      <input class="buy-info-div-form-quantity-input product-80" type="text" name="PRODUCT[QUANTITY]" value="1" maxlength="2" readonly="readonly" data-value="0" />
+                                    </label>
+                                    <button class="product-quantity-button plus" type="button" data-form="product-80">
+                                      <span class="product-quantity-button-span"></span>
+                                    </button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <ul class="buy-info-div-ul">
+                              <li class="buy-info-div-ul-li">
+                                <div class="buy-info-div-ul-li-div">
+                                  <span class="buy-info-div-ul-li-div-span">Материал корпуса:</span>
+                                  <span class="buy-info-div-ul-li-div-span">ЛДСП</span>
+                                </div>
+                              </li>
+                              <li class="buy-info-div-ul-li">
+                                <div class="buy-info-div-ul-li-div">
+                                  <span class="buy-info-div-ul-li-div-span">Материал фасада:</span>
+                                  <span class="buy-info-div-ul-li-div-span">ЛДСП</span>
+                                </div>
+                              </li>
+                              <li class="buy-info-div-ul-li">
+                                <div class="buy-info-div-ul-li-div">
+                                  <span class="buy-info-div-ul-li-div-span">Дверная система:</span>
+                                  <span class="buy-info-div-ul-li-div-span">раздвижная подвесная</span>
+                                </div>
+                              </li>
+                              <li class="buy-info-div-ul-li">
+                                <div class="buy-info-div-ul-li-div">
+                                  <span class="buy-info-div-ul-li-div-span">Производитель:</span>
+                                  <span class="buy-info-div-ul-li-div-span">Россия</span>
+                                </div>
+                              </li>
+                              <li class="buy-info-div-ul-li">
+                                <div class="buy-info-div-ul-li-div">
+                                  <span class="buy-info-div-ul-li-div-span">Цвет:</span>
+                                  <span class="buy-info-div-ul-li-div-span">Белый</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="product-tabs-li" id="tabs">
+                          <!--ul class="product-tabs-li-ul">
+                            <li class="product-tabs-li-ul-li selected" data-tab="desc" data-move="tabs">
+                              <span class="product-tabs-li-ul-li-span">Описание</span>
+                            </li>
+                            <li class="product-tabs-li-ul-li" data-tab="delivery" data-move="tabs">
+                              <span class="product-tabs-li-ul-li-span">Доставка</span>
+                            </li>
+                            <li class="product-tabs-li-ul-li" data-tab="payment" data-move="tabs">
+                              <span class="product-tabs-li-ul-li-span">Оплата</span>
+                            </li>
+                          </ul-->
+                          <div class="product-tabs-li-div desc selected">
+                            <p>Мы сами производим и контролируем качество всей продукции от этапа разработки модели до контрольной сборки готового изделия.</p>
+                          </div>
+                          <div class="product-tabs-li-div delivery">
+                            <p>Мы внимательно следим за тем, из чего будет сделана ваша новая мабель: от наполнителей и встроенных механизмов до декоративных элементов.</p>
+                          </div>
+                          <div class="product-tabs-li-div payment">
+                            <p>У нас работают только квалифицированные специалисты, ежегодно наша команда участвует в мебельных выставках и мероприятиях, позволяющих предлагать всегда самые актуальные решения.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- тороговое предложение :: конец -->
+
+
+                  </article>
+                </li>
+                <!-- /article -->
+                <!-- footer -->
+                <li class="footer-li">
+                  <div class="contacts-header alignment">
+                    <div class="contacts-header-div centering">
+                      <span class="contacts-header-div-span">
+                        <span class="contacts-header-div-span-span accent">Контакты</span>
+                      </span>
+                    </div>
+                  </div>
+                  <footer class="alignment">
+                    <div id="feedback" class="form feedback">
+                      <div>
+                        <span>Оставьте заявку</span>
+                        <span>Спасибо!</span>
+                        <blockquote>Оставьте контактные данные и кратко опишите суть вопроса, который необходимо обсудить</blockquote>
+                        <blockquote>Ваше сообщение успешно отправлено. В ближайшее время с Вами свяжется наш специалист и ответит на все, интересующие Вас, вопросы.</blockquote>
+                      </div>
+                      <form name="feedback" method="post" action="#">
+                        <ul>
+                          <li>
+                            <div class="accent">
+                              <span>Свяжитесь с нами</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="choose utheme">
+                              <label>
+                                <input class="field" type="text" name="utheme" value="" readonly="readonly" data-form="feedback" data-list="utheme" />
+                                <span>Тема обращения</span>
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="hide utheme">
+                          <li>
+                            <div class="required">
+                              <label class="required">
+                                <input class="field" type="text" name="uname" value="" data-form="feedback" data-check="name" />
+                                <span>Имя</span>
+                              </label>
+                            </div>
+                            <div class="required">
+                              <label class="required">
+                                <input class="field" type="tel" name="uphone" value="" data-form="feedback" data-check="phone" />
+                                <span>Телефон</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label>
+                                <input class="field" type="email" name="uemail" value="" data-form="feedback" data-check="email" />
+                                <span>E-mail</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="textarea">
+                              <label>
+                                <textarea class="field" name="umessage" data-form="feedback"></textarea>
+                                <span>Сопроводительное письмо</span>
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                        <ol class="hide utheme">
+                          <li>
+                            <div class="consent">
+                              <span>
+                                <span>Нажимая на кнопку «<strong>ОТПРАВИТЬ</strong>»,<br />я соглашаюсь с</span>
+                                <a href="/policy/" title="политикой конфиденциальности">политикой конфиденциальности</a> </span>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                              <button class="accent" type="button" data-form="feedback">ОТПРАВИТЬ</button>
+                            </div>
+                          </li>
+                        </ol>
+                      </form>
+                    </div>
+                  </footer>
+                  <ul class="contacts-ul">
+                    <li class="contacts-ul-li">
+                      <div id="map" class="map"></div>
+                    </li>
+                    <li class="contacts-ul-li">
+                      <ul class="contacts-ul-li-ul">
+                        <li class="contacts-ul-li-ul-li">
+                          <div class="contacts-ul-li-ul-li-div">
+                            <strong>Офис</strong><br />
+                            <span>г. Москва, Академика Королева, 13 строение 1 офис 480</span><br />
+                            <a href="https://yandex.ru/maps/?rtext=55.818877,37.618354~55.755241,37.617779&rtt=comparison" title="Схема проезда" target="_blank" rel="noopener">Схема проезда</a>
+                          </div>
+                        </li>
+                        <li class="contacts-ul-li-ul-li">
+                          <div class="contacts-ul-li-ul-li-div">
+                            <strong>Телефон</strong><br />
+                            <a href="tel:+74952121224" title="+7 (495) 212-12-24">
+                              <span>+7 (495) 212-12-24</span>
+                            </a>
+                          </div>
+                        </li>
+                        <li class="contacts-ul-li-ul-li">
+                          <div class="contacts-ul-li-ul-li-div">
+                            <strong>Режим работы</strong><br />
+                            <span>9:00-21:00, ежедневно</span>
+                          </div>
+                        </li>
+                        <li class="contacts-ul-li-ul-li">
+                          <div class="contacts-ul-li-ul-li-div">
+                            <strong>E-mail</strong><br />
+                            <a href="mailto:info@site.ru" title="info@site.ru">
+                              <span>info@site.ru</span>
+                            </a>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <footer class="alignment">
+                    <div class="footer centering copyright">
+                      <span>2020 © INTERIOR PRICE</span><br />
+                      <span>комплексные решения для создания офисного пространства</span>
+                      <a class="developer" href="https://www.tarantul.zone/" title="разработка сайта" target="_blank" rel="noopener"></a>
+                    </div>
+                  </footer>
+                </li>
+                <!-- /footer -->
+              </ul>
+            </div>
+            <div class="baron-track">
+              <div class="baron-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /workspace -->
+  </div>
+</body>
+
+</html>
