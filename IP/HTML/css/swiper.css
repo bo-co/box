@@ -121,7 +121,7 @@
 /* CSS Mode */
 .swiper-container-css-mode > .swiper-wrapper {
   overflow: auto;
-  scrollbar-width: none;
+  /* scrollbar-width: none; */
   /* For Firefox */
   -ms-overflow-style: none;
   /* For Internet Explorer and Edge */
@@ -143,26 +143,19 @@
   scroll-snap-type: y mandatory;
 }
 
-:root {
-  --swiper-navigation-size: 44px;
-  /*
-  --swiper-navigation-color: var(--swiper-theme-color);
-  */
-}
-
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
   top: 50%;
-  width: calc(var(--swiper-navigation-size) / 44 * 27);
-  height: var(--swiper-navigation-size);
-  margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+  width: calc(44px / 44 * 27);
+  height: 44px;
+  margin-top: calc(-1 * 44px / 2);
   z-index: 10;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  /* color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
 }
 
 .swiper-button-prev.swiper-button-disabled,
@@ -175,7 +168,7 @@
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-family: swiper-icons;
-  font-size: var(--swiper-navigation-size);
+  font-size: 44px;
   text-transform: none !important;
   letter-spacing: 0;
   text-transform: none;
