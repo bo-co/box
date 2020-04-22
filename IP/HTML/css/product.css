@@ -123,7 +123,7 @@ article > div.content {
   width: calc(100% + 1em);
   display: flex;
   flex-wrap: wrap;
-  padding: 1em 0 1.5em 0;
+  padding: .5em 0 1em 0;
   margin: 0;
   list-style: none;
 }
@@ -132,7 +132,7 @@ article > div.content {
   position: relative;
   width: 2.5em;
   height: 2.5em;
-  margin: 0 .5em;
+  margin: .5em;
 }
 
 .buy-info-div-colors-ul-li-span,
