@@ -382,6 +382,7 @@ button.swiper-pagination-bullet {
   z-index: 50;
   height: 5px;
   width: calc(100% - 2em);
+  overflow: hidden;
 }
 
 .swiper-container-vertical > .swiper-scrollbar {
