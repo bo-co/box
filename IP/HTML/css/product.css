@@ -206,7 +206,11 @@
   padding-left: 1em;
   font-size: .8em;
   line-height: 1.1;
-  color: rgba(115, 115, 115, 1);
+  color: rgba(75, 75, 75, 1);
+}
+
+.buy-info-div-form-price-unit > span {
+  text-decoration: line-through;
 }
 
 .buy-info-div-form-button {
