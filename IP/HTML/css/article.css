@@ -8,7 +8,7 @@ article {
 
 article > div.content {
   position: inherit;
-  padding: 1rem;
+  padding: 1rem 1rem .5rem 1rem;
 }
 
 article > div.content > div {
@@ -34,13 +34,14 @@ article > div.content > div h4 {
   padding: 0.5em 0;
 }
 
-article > div.content > div h1,
-article > div.content > header h1 {
-  padding: 0 0 0.5rem 0;
+article > div.content > div h1 > span:first-child,
+article > div.content > header h1 > span:first-child {
+  text-transform: uppercase;
 }
 
 article > div.content > div blockquote,
 article > div.content > header blockquote {
+  padding: .5rem 0 0 0;
   font-size: 1.1em;
   line-height: 1.2;
 }
