@@ -1,6 +1,3 @@
-var quantity = null,
-  quantity_user = null;
-
 $(document).ready(function () {
   "use strict";
   $(".product-tabs-li-ul-li").on("click", function () {
@@ -17,8 +14,6 @@ $(document).ready(function () {
       $(this).addClass("selected");
     }
   });
-
-
   var galleryThumbs = new Swiper('.product-gallery-wrapper-thumbs', {
     spaceBetween: 5,
     slidesPerView: 5,
@@ -26,7 +21,6 @@ $(document).ready(function () {
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
   });
-
   var galleryTop = new Swiper('.product-gallery-swiper-container', {
     pagination: {
       el: '.product-swiper-container-pagination',
@@ -40,6 +34,5 @@ $(document).ready(function () {
       swiper: galleryThumbs
     }
   });
-
   return false;
 });

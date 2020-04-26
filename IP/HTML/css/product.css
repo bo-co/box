@@ -216,13 +216,12 @@
 .buy-info-div-form-button {
   position: relative;
   width: 100%;
-  height: 3.125em;
-  padding: 0 1.5em;
-  margin: 0 0 .5em 0;
-  border: 0;
-  border-radius: .25em;
-  font-size: .8em;
-  line-height: 3.125em;
+  height: calc(1em/3 + 3em);
+  padding: 0;
+  margin: calc(1em/3*2) 0;
+  border-radius: calc(1em/3);
+  font-size: .75em;
+  line-height: calc(1em/3 + 3em);
   text-transform: uppercase;
   font-weight: 900;
   text-align: center;
@@ -232,6 +231,7 @@
 }
 
 .buy-info-div-form-button.basket {
+  border: 0;
   background-color: rgba(189, 54, 47, 1);
   color: rgba(255, 255, 255, 1);
   cursor: pointer;
@@ -242,9 +242,14 @@
 }
 
 .buy-info-div-form-button.empty {
+  border: solid 2px rgba(213, 213, 213, 1);
+  background-color: rgba(213, 213, 213, .5);
+  color: rgba(75, 75, 75, 1);
+}
+
+.buy-info-div-form-button.empty:hover {
   background-color: rgba(213, 213, 213, 1);
   color: rgba(50, 50, 50, 1);
-  cursor: default;
 }
 
 .buy-info-div-form-button.empty,
@@ -252,7 +257,7 @@
   display: none;
 }
 
-.buy-info-div-form-button.basket.selected + button {
+.buy-info-div-form-button.basket.selected + .buy-info-div-form-button.empty {
   display: block;
 }
 
@@ -386,13 +391,9 @@
     align-items: center;
   }
 
-  .buy-info-div-form-price,
-  .buy-info-div-form-price + form {
-    width: 50%;
-  }
-
-  .buy-info-div-form-price + form {
-    padding-right: 1em;
+  .buy-info-div-form-price {
+    min-width: calc(50% + 1em);
+    padding-left: 1em;
   }
 
   .product-tabs-li {
@@ -465,13 +466,9 @@
     align-items: center;
   }
 
-  .buy-info-div-form-price,
-  .buy-info-div-form-price + form {
-    width: 50%;
-  }
-
-  .buy-info-div-form-price + form {
-    padding-right: 1em;
+  .buy-info-div-form-price {
+    min-width: calc(50% + 1em);
+    padding-left: 1em;
   }
 
   .product-tabs-li {
