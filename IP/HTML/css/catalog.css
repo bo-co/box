@@ -58,8 +58,7 @@
 
 .catalog-section-item-name {
   position: relative;
-  padding: 1.25em;
-  font-size: .8em;
+  padding: 1em;
 }
 
 .catalog-section-item-name > span:nth-child(2)::after {
