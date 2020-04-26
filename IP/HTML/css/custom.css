@@ -364,7 +364,6 @@ div.container > div.list > div > div > ul > li:hover {
   background-color: rgba(189, 54, 47, 1);
   color: rgba(255, 255, 255, 1);
   border-radius: .25em;
-  font-weight: 800;
 }
 
 .informer-a:hover {
