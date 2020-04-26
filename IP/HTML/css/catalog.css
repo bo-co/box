@@ -145,6 +145,10 @@
   color: rgba(115, 115, 115, 1);
 }
 
+.catalog-section-item-div-unit > span {
+  text-decoration: line-through;
+}
+
 @media (min-width : 1201px) {
   .catalog-section-item {
     width: calc(100% / 3 - 1em - 2px);
