@@ -30,7 +30,7 @@ div.baron > div.baron-track {
   top: 0;
   right: 2.5em;
   bottom: 0;
-  z-index: 20;
+  z-index: 30;
 }
 
 div.baron._scrollbar > div.baron-track {

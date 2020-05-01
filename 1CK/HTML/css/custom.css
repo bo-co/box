@@ -212,7 +212,7 @@ div.form > div > span {
 
 div.form:not(.success) > div > span,
 div.form:not(.success) > div > blockquote {
-  display: none !important;
+  display: none;
 }
 
 div.form > div > blockquote,
@@ -321,6 +321,7 @@ div.container > div.list > div > div > ul > li:hover {
     padding-right: 1rem;
   }
 
+  .article-image-header,
   div.form > div > span,
   article > div.content > div > h1,
   article > div.content > div > h2,
@@ -334,6 +335,11 @@ div.container > div.list > div > div > ul > li:hover {
 
   article > div.content > div > h4 {
     font-size: 2.2em;
+  }
+
+  article > div.content > div blockquote,
+  article > div.content > header blockquote {
+    font-size: 1.5em;
   }
 
   div.container > div.workspace > div:first-child {
@@ -357,6 +363,7 @@ div.container > div.list > div > div > ul > li:hover {
     padding-right: 1rem;
   }
 
+  .article-image-header,
   div.form > div > span,
   article > div.content > div > h1,
   article > div.content > div > h2,
@@ -370,6 +377,11 @@ div.container > div.list > div > div > ul > li:hover {
 
   article > div.content > div > h4 {
     font-size: 2em;
+  }
+
+  article > div.content > div blockquote,
+  article > div.content > header blockquote {
+    font-size: 1.4em;
   }
 
   div.container > div.workspace > div:first-child {
@@ -397,6 +409,7 @@ div.container > div.list > div > div > ul > li:hover {
     margin-left: 1em;
   }
 
+  .article-image-header,
   div.form > div > span,
   article > div.content > div > h1,
   article > div.content > header h1,
@@ -410,6 +423,11 @@ div.container > div.list > div > div > ul > li:hover {
 
   article > div.content > div > h4 {
     font-size: 1.8em;
+  }
+
+  article > div.content > div blockquote,
+  article > div.content > header blockquote {
+    font-size: 1.3em;
   }
 
   div.container > div.workspace > div:first-child {
@@ -433,6 +451,7 @@ div.container > div.list > div > div > ul > li:hover {
     margin-left: 1em;
   }
 
+  .article-image-header,
   div.form > div > span,
   article > div.content > div > h1,
   article > div.content > header h1,
@@ -446,6 +465,11 @@ div.container > div.list > div > div > ul > li:hover {
 
   article > div.content > div > h4 {
     font-size: 1.6em;
+  }
+
+  article > div.content > div blockquote,
+  article > div.content > header blockquote {
+    font-size: 1.2em;
   }
 
   div.container > div.workspace > div:first-child {
@@ -470,6 +494,7 @@ div.container > div.list > div > div > ul > li:hover {
     padding-right: 1.5em;
   }
 
+  .article-image-header,
   div.form > div > span,
   article > div.content > div > h1,
   article > div.content > div > h2,
@@ -483,6 +508,11 @@ div.container > div.list > div > div > ul > li:hover {
 
   article > div.content > div > h4 {
     font-size: 1.4em;
+  }
+
+  article > div.content > div blockquote,
+  article > div.content > header blockquote {
+    font-size: 1.1em;
   }
 
   div.container > div.workspace > div:first-child {
