@@ -8,8 +8,15 @@
   flex-wrap: wrap;
   width: calc(100% + 2em);
   margin: 0 0 1rem 0;
-  padding: calc(1rem - 1em) 0;
   list-style: none !important;
+}
+
+.advantage {
+  padding: 0 0 calc(1rem - 1em) 0;
+}
+
+.service {
+  padding: calc(1rem - 1em) 0;
 }
 
 .advantage::after,
@@ -25,7 +32,10 @@
   background-color: rgba(180, 180, 180, 1);
 }
 
-.advantage-item,
+.advantage-item {
+  margin: 0 1em 1em 1em;
+}
+
 .service-item {
   margin: 1em;
 }
