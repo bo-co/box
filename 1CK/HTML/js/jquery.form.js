@@ -94,24 +94,27 @@ function isForm(form) {
   $.ajax({
     type: "POST",
     data: $("div.form." + form + " > form").serialize(),
-    url: "/actions/?action=" + form,
+    url: "/resources/ajax/?action=" + form,
     cache: false,
     dataType: "json"
   }).done(function (result) {
     if (result.status === "success") {
-      $("div.form." + form).html(result.message);
+      $("div.form." + form).addClass("success");
+      /* yaCounter54748225.reachGoal('order'); */
+      return true;
     } else {
       if (result.field) {
-        if (!$("div.form." + form + " > form input[name=" + result.field + "]").hasClass("error")) {
-          $("div.form." + form + " > form input[name=" + result.field + "]").addClass("error");
+        if (!$("div.form." + form + " > form input[name='" + result.field + "']").hasClass("error")) {
+          $("div.form." + form + " > form input[name='" + result.field + "']").addClass("error");
         }
       }
       console.log(result.error);
+      return false;
     }
-  }).fail(function () {
+  }).fail(function (result) {
     console.log("ошибка отправки формы");
+    return false;
   });
-  return false;
 }
 
 function isChoose(el) {
@@ -212,7 +215,7 @@ $(document).ready(function () {
         if (!$(el).next("span").hasClass("selected")) {
           $(el).next("span").addClass("selected");
         }
-        if ($(el).parent().hasClass("required")) {
+        if ($(el).parent().hasClass("required") || $(el).hasClass("error")) {
           isCheck(el);
         }
       }
