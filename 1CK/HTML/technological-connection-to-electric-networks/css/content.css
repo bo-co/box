@@ -161,16 +161,6 @@
   bottom: calc(.9em + .5rem - 2px);
 }
 
-.step-item:nth-child(odd) {
-  padding: 1.4em 0 1.4em 2.8em;
-  text-align: left;
-}
-
-.step-item:nth-child(even) {
-  padding: 1.4em 2.8em 1.4em 0;
-  text-align: right;
-}
-
 .step-item::before {
   position: absolute;
   top: 0;
@@ -185,15 +175,15 @@
 .step-item:nth-child(odd)::before {
   left: 0;
   border-left: solid 4px rgba(200, 56, 52, 1);
-  border-top-left-radius: 2.8em;
-  border-bottom-left-radius: 2.8em;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
 }
 
 .step-item:nth-child(even)::before {
   right: 0;
   border-right: solid 4px rgba(200, 56, 52, 1);
-  border-top-right-radius: 2.8em;
-  border-bottom-right-radius: 2.8em;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
 }
 
 .step-item::after {
@@ -223,11 +213,11 @@
 }
 
 .step-item:nth-child(odd)::after {
-  left: -.5em;
+  left: -.45em;
 }
 
 .step-item:nth-child(even)::after {
-  right: -.5em;
+  right: -.45em;
 }
 
 .step-item-div {
@@ -258,6 +248,11 @@ div.form:not(.success) > div > blockquote {
     text-align: center;
   }
 
+  .step-item {
+    padding: 1.4em 2.8em;
+    text-align: center;
+  }
+
   .step-item-div {
     justify-content: center;
   }
@@ -282,6 +277,16 @@ div.form:not(.success) > div > blockquote {
     text-align: center;
   }
 
+  .step-item:nth-child(odd) {
+    padding: 1.4em 0 1.4em 2.8em;
+    text-align: left;
+  }
+
+  .step-item:nth-child(even) {
+    padding: 1.4em 2.8em 1.4em 0;
+    text-align: right;
+  }
+
   .step-item:nth-child(even) > .step-item-div {
     justify-content: flex-end;
   }
@@ -300,6 +305,11 @@ div.form:not(.success) > div > blockquote {
   }
 
   .advantage-item-span {
+    text-align: center;
+  }
+
+  .step-item {
+    padding: 1.4em 2.8em;
     text-align: center;
   }
 
@@ -327,6 +337,16 @@ div.form:not(.success) > div > blockquote {
     text-align: center;
   }
 
+  .step-item:nth-child(odd) {
+    padding: 1.4em 0 1.4em 2.8em;
+    text-align: left;
+  }
+
+  .step-item:nth-child(even) {
+    padding: 1.4em 2.8em 1.4em 0;
+    text-align: right;
+  }
+
   .step-item:nth-child(even) > .step-item-div {
     justify-content: flex-end;
   }
@@ -351,6 +371,16 @@ div.form:not(.success) > div > blockquote {
   .advantage-item,
   .service-item {
     width: calc(100% - 2em);
+  }
+
+  .step-item:nth-child(odd) {
+    padding: 1.4em 0 1.4em 2.8em;
+    text-align: left;
+  }
+
+  .step-item:nth-child(even) {
+    padding: 1.4em 2.8em 1.4em 0;
+    text-align: right;
   }
 
   .step-item:nth-child(even) > .step-item-div {
