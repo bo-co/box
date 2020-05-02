@@ -285,6 +285,7 @@ div.form > form li > div > label > input {
 article > div.content > div blockquote,
 article > div.content > header blockquote {
   color: rgba(200, 56, 52, 1);
+  line-height: 1.2;
 }
 
 /* developer */
