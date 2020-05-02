@@ -132,6 +132,7 @@
 .service-item-span-header {
   font-size: 1.2em;
   font-weight: 500;
+  padding-bottom: .5em;
 }
 
 .steps {
