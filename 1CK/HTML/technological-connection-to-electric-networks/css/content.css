@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+article > div.content > div {
+  padding: 0 0 .5rem 0;
+}
+
+.blockquote-content {
+  max-width: 640px;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
 .advantage,
 .service {
   position: relative;
@@ -41,7 +51,7 @@
 }
 
 .service-item-div {
-  padding-top: 35%;
+  padding-top: 25%;
   margin-bottom: 1em;
 }
 
@@ -143,54 +153,6 @@
   counter-reset: num;
 }
 
-.steps::before,
-.steps::after {
-  position: absolute;
-  left: calc(50% - .5em);
-  content: "";
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  background-color: rgba(200, 56, 52, 1);
-}
-
-.steps::before {
-  top: calc(.9em + .5rem + 2px);
-}
-
-.steps::after {
-  bottom: calc(.9em + .5rem - 2px);
-}
-
-.step-item {
-  border: solid 4px rgba(255, 255, 255, 0);
-}
-
-.step-item::before {
-  position: absolute;
-  top: -4px;
-  z-index: 10;
-  width: 50%;
-  height: calc(100% + 4px);
-  content: "";
-  border-top: solid 4px rgba(200, 56, 52, 1);
-  border-bottom: solid 4px rgba(200, 56, 52, 1);
-}
-
-.step-item:nth-child(odd)::before {
-  left: 0;
-  border-left: solid 4px rgba(200, 56, 52, 1);
-  border-top-left-radius: 2em;
-  border-bottom-left-radius: 2em;
-}
-
-.step-item:nth-child(even)::before {
-  right: 0;
-  border-right: solid 4px rgba(200, 56, 52, 1);
-  border-top-right-radius: 2em;
-  border-bottom-right-radius: 2em;
-}
-
 .step-item::after {
   position: absolute;
   top: calc(50% - .7em);
@@ -215,14 +177,6 @@
 .step-item-empty::after {
   background-color: rgba(255, 255, 255, 1);
   color: rgba(200, 56, 52, 1);
-}
-
-.step-item:nth-child(odd)::after {
-  left: -.45em;
-}
-
-.step-item:nth-child(even)::after {
-  right: -.45em;
 }
 
 .step-item-div {
@@ -253,13 +207,23 @@ div.form:not(.success) > div > blockquote {
     text-align: center;
   }
 
-  .step-item {
-    padding: 1em 3em;
-    text-align: center;
+  .steps::before {
+    position: absolute;
+    top: calc(1.4em + 1rem);
+    left: .65em;
+    z-index: 10;
+    width: 4px;
+    height: calc(100% - (1.4em + 1rem)*2);
+    content: "";
+    background-color: rgba(200, 56, 52, 1);
   }
 
-  .step-item-div {
-    justify-content: center;
+  .step-item {
+    padding: .5em 0 .5em 4em;
+  }
+
+  .step-item::after {
+    left: 0;
   }
 }
 
@@ -282,18 +246,23 @@ div.form:not(.success) > div > blockquote {
     text-align: center;
   }
 
-  .step-item:nth-child(odd) {
-    padding: 1em 0 1em 3em;
-    text-align: left;
+  .steps::before {
+    position: absolute;
+    top: calc(1.4em + 1rem);
+    left: .7em;
+    z-index: 10;
+    width: 4px;
+    height: calc(100% - (1.4em + 1rem)*2);
+    content: "";
+    background-color: rgba(200, 56, 52, 1);
   }
 
-  .step-item:nth-child(even) {
-    padding: 1em 3em 1em 0;
-    text-align: right;
+  .step-item {
+    padding: .5em 0 .5em 4em;
   }
 
-  .step-item:nth-child(even) > .step-item-div {
-    justify-content: flex-end;
+  .step-item::after {
+    left: 0;
   }
 }
 
@@ -313,13 +282,23 @@ div.form:not(.success) > div > blockquote {
     text-align: center;
   }
 
-  .step-item {
-    padding: 1em 3em;
-    text-align: center;
+  .steps::before {
+    position: absolute;
+    top: calc(1.4em + 1rem);
+    left: .7em;
+    z-index: 10;
+    width: 4px;
+    height: calc(100% - (1.4em + 1rem)*2);
+    content: "";
+    background-color: rgba(200, 56, 52, 1);
   }
 
-  .step-item-div {
-    justify-content: center;
+  .step-item {
+    padding: .5em 0 .5em 4em;
+  }
+
+  .step-item::after {
+    left: 0;
   }
 }
 
@@ -342,6 +321,29 @@ div.form:not(.success) > div > blockquote {
     text-align: center;
   }
 
+  .steps::before,
+  .steps::after {
+    position: absolute;
+    left: calc(50% - .5em);
+    content: "";
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: rgba(200, 56, 52, 1);
+  }
+
+  .steps::before {
+    top: calc(.9em + .5rem + 2px);
+  }
+
+  .steps::after {
+    bottom: calc(.9em + .5rem - 2px);
+  }
+
+  .step-item {
+    border: solid 4px rgba(255, 255, 255, 0);
+  }
+
   .step-item:nth-child(odd) {
     padding: 1em 0 1em 3em;
     text-align: left;
@@ -354,6 +356,39 @@ div.form:not(.success) > div > blockquote {
 
   .step-item:nth-child(even) > .step-item-div {
     justify-content: flex-end;
+  }
+
+  .step-item:nth-child(even)::after {
+    right: -.45em;
+  }
+
+  .step-item:nth-child(odd)::after {
+    left: -.45em;
+  }
+
+  .step-item::before {
+    position: absolute;
+    top: -4px;
+    z-index: 10;
+    width: 50%;
+    height: calc(100% + 4px);
+    content: "";
+    border-top: solid 4px rgba(200, 56, 52, 1);
+    border-bottom: solid 4px rgba(200, 56, 52, 1);
+  }
+
+  .step-item:nth-child(odd)::before {
+    left: 0;
+    border-left: solid 4px rgba(200, 56, 52, 1);
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+  }
+
+  .step-item:nth-child(even)::before {
+    right: 0;
+    border-right: solid 4px rgba(200, 56, 52, 1);
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
   }
 }
 
@@ -378,6 +413,29 @@ div.form:not(.success) > div > blockquote {
     width: calc(100% - 2em);
   }
 
+  .steps::before,
+  .steps::after {
+    position: absolute;
+    left: calc(50% - .5em);
+    content: "";
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: rgba(200, 56, 52, 1);
+  }
+
+  .steps::before {
+    top: calc(.9em + .5rem + 2px);
+  }
+
+  .steps::after {
+    bottom: calc(.9em + .5rem - 2px);
+  }
+
+  .step-item {
+    border: solid 4px rgba(255, 255, 255, 0);
+  }
+
   .step-item:nth-child(odd) {
     padding: 1em 0 1em 3em;
     text-align: left;
@@ -390,5 +448,38 @@ div.form:not(.success) > div > blockquote {
 
   .step-item:nth-child(even) > .step-item-div {
     justify-content: flex-end;
+  }
+
+  .step-item:nth-child(even)::after {
+    right: -.45em;
+  }
+
+  .step-item:nth-child(odd)::after {
+    left: -.45em;
+  }
+
+  .step-item::before {
+    position: absolute;
+    top: -4px;
+    z-index: 10;
+    width: 50%;
+    height: calc(100% + 4px);
+    content: "";
+    border-top: solid 4px rgba(200, 56, 52, 1);
+    border-bottom: solid 4px rgba(200, 56, 52, 1);
+  }
+
+  .step-item:nth-child(odd)::before {
+    left: 0;
+    border-left: solid 4px rgba(200, 56, 52, 1);
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+  }
+
+  .step-item:nth-child(even)::before {
+    right: 0;
+    border-right: solid 4px rgba(200, 56, 52, 1);
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
   }
 }
