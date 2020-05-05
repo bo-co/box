@@ -15,6 +15,7 @@ a:hover {
   border-bottom: 1px solid rgba(115, 115, 115, .5);
 }
 
+.catalog-section-header-filter,
 footer > div.footer.copyright > a,
 nav > ul > li > a,
 nav > ul > li > ul > li > a {
@@ -268,6 +269,7 @@ div.form > form ul > li > div.required::after {
   color: rgba(115, 115, 115, 1);
 }
 
+.catalog-section-header-filter,
 div.form > form li > div > button {
   height: 3.125em;
   border-radius: .25em;
@@ -279,6 +281,7 @@ div.form > form li > div > button {
   font-weight: 900;
 }
 
+.catalog-section-header-filter:hover,
 div.form > form li > div > button:hover {
   background-color: rgba(159, 24, 17, 1);
 }

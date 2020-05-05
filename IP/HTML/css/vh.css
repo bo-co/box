@@ -1,5 +1,5 @@
 @charset "UTF-8";
 
-div.container {
+.wrapper {
   height: calc(var(--vh, 1vh) * 100);
 }
