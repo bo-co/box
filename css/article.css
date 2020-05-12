@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+h1,
+h2,
+h3,
+h4,
+article,
+article > div.content,
+article > div.content blockquote {
+  position: relative;
+}
+
+article > div.content {
+  padding: 1rem 1.5em .5rem 1.5em;
+}
+
+article > div.content > div {
+  padding: .5rem 0;
+  font-size: .9em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+}
+
+h2,
+h3,
+h4 {
+  padding: .5em 0;
+}
+
+article > div.content blockquote {
+  padding: .5rem 0 0 0;
+  font-size: 1.1em;
+  line-height: 1.2;
+}
+
+article > div.content > div ul {
+  list-style: disc;
+}

@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+.header-icons-a,
+.header-icons-info,
+.informer-span,
+.informer-a,
+.informer-a-span {
+  display: block;
+}
+
+.header-icons,
+.header-icons-a,
+.header-icons-li {
+  position: relative;
+}
+
+.header-icons-a::before,
+.header-icons-info,
+.informer {
+  position: absolute;
+}
+
+.header-icons {
+  display: flex;
+  padding: 0 0 0 1em;
+  list-style: none;
+}
+
+.header-icons-li,
+.header-icons-a {
+  height: 2.5em;
+}
+
+.header-icons-li:hover > .informer {
+  display: block;
+}
+
+.header-icons-a {
+  padding-left: 2.5em;
+}
+
+.header-icons-a::before {
+  top: calc(50% - .7em);
+  left: 0;
+  z-index: 1;
+  width: 2.5em;
+  font-family: "icomoon" !important;
+  text-align: center;
+  transform: scale(2);
+  transform-origin: center center;
+}
+
+.header-icons-a::after {
+  display: none;
+  padding-top: 1em;
+  font-weight: 500;
+  transform: scale(.9);
+  transform-origin: center center;
+}
+
+.header-icon-basket::after {
+  content: "Корзина";
+}
+
+.header-icon-favourites::after {
+  content: "Избранное";
+}
+
+.header-icon-compare::after {
+  content: "Сравнение";
+}
+
+.header-icons-a:hover > .header-icons-info {
+  transform: scale(.65);
+}
+
+.header-icons-info {
+  width: 2em;
+  height: 2em;
+  bottom: calc(50% - .5em);
+  left: 1.25em;
+  z-index: 2;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  line-height: 1.85;
+  border-radius: 50%;
+  transform: scale(.6);
+  transform-origin: left center;
+  transition: all .3s ease;
+}
+
+.informer {
+  display: none;
+  top: calc(100% + .25em);
+  z-index: 10;
+  padding: .5em 1.5em;
+  text-align: center;
+}
+
+.informer-span,
+.informer-a-span {
+  white-space: nowrap;
+}
+
+.informer-span {
+  font-size: .8em;
+  margin: .5em 0;
+}
+
+.informer-span::after {
+  font-family: "ruble", Arial, Tahoma, Verdana, sans-serif;
+  font-weight: 400;
+  content: "\0000a0₽";
+}
+
+.informer-a {
+  height: 2.5em;
+  margin: .5em 0;
+  transition: all .3s ease;
+  overflow: hidden;
+}
+
+.informer-a-span {
+  font-size: .75em;
+  font-weight: 900;
+  line-height: calc(1em/3 + 3em);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (min-width : 1201px) {
+  .informer {
+    right: 0;
+  }
+}
+
+@media (min-width : 961px) and (max-width : 1200px) {
+  .informer {
+    right: 0;
+  }
+}
+
+@media (min-width : 721px) and (max-width : 960px) {
+  .informer {
+    right: 0;
+  }
+}
+
+@media (min-width : 481px) and (max-width : 720px) {
+  .informer {
+    right: 0;
+  }
+}
+
+@media (max-width : 480px) {
+  .informer {
+    right: -2rem;
+  }
+}

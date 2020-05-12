@@ -1,0 +1,397 @@
+@charset "UTF-8";
+
+body {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(58, 58, 58, 1);
+  font-weight: 500;
+}
+
+a {
+  color: rgba(244, 173, 61, 1);
+  border-bottom: 1px solid rgba(244, 173, 61, .5);
+}
+
+a:hover {
+  color: rgba(156, 156, 156, 1);
+  border-bottom: 1px solid rgba(156, 156, 156, .5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div.form > div > span {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.header-yellow {
+  color: rgba(244, 173, 61, 1);
+}
+
+footer > div.footer.copyright > a,
+nav > ul > li > a,
+nav > ul > li > ul > li > a,
+ol.social > li > a {
+  border: 0 !important;
+}
+
+/* header */
+.header {
+  width: 100%;
+  padding: 0 1.5em;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px rgba(77, 77, 77, .1);
+}
+
+.logo-header {
+  border: 0 !important;
+}
+
+.header-logo {
+  max-width: 11em;
+  max-height: calc(100% - 1rem);
+  border: 0 !important;
+}
+
+.header-logo-span {
+  background-image: url(../img/logo.small.svg?100520201549);
+}
+
+.header-lang {
+  background-color: rgba(244, 173, 61, 1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: .25em;
+  border: 0 !important;
+}
+
+/* burder */
+
+ul.burger > li {
+  background-color: rgba(58, 58, 58, 1);
+}
+
+/* workspace */
+
+div.container > div.workspace > div:first-child {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px rgba(58, 58, 58, .1);
+}
+
+/* nav */
+
+.aside-logo {
+  border: 0 !important;
+}
+
+.aside-logo-span {
+  height: 6em;
+  background-image: url(../img/logo.svg?100520201549);
+}
+
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > ul > li > a,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:nth-child(2) > nav > ul > li > a {
+  color: rgba(156, 156, 156, 1);
+}
+
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > a:hover,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > ul > li > a:hover,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:nth-child(2) > nav > ul > li > ul > li > a:hover {
+  color: rgba(58, 58, 58, 1);
+}
+
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > div > span,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > ul > li > div > span,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:nth-child(2) > nav > ul > li > div > span,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:nth-child(2) > nav > ul > li > ul > li > div > span {
+  color: rgba(244, 173, 61, 1);
+}
+
+/* footer */
+
+footer {
+  background-color: rgba(58, 58, 58, 1);
+}
+
+footer > div.footer.copyright {
+  color: rgba(156, 156, 156, 1);
+}
+
+/* form */
+
+div.form {
+  background-color: rgba(243, 243, 243, 1);
+}
+
+div.form > form ul > li > div {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+div.form > form li > div > label > textarea + span,
+div.form > form li > div > label > input[type=text] + span,
+div.form > form li > div > label > input[type=email] + span,
+div.form > form li > div > label > input[type=tel] + span {
+  color: rgba(156, 156, 156, 1);
+}
+
+div.form > form li > div > label > textarea,
+div.form > form li > div > label > input {
+  border: 1px solid rgba(230, 230, 230, 1);
+  color: rgba(58, 58, 58, 1);
+}
+
+div.form > form li > div > label > textarea:focus,
+div.form > form li > div > label > input:focus {
+  border: 1px solid rgba(210, 210, 210, 1);
+}
+
+div.form > form ul > li > div > label > input.error {
+  border: 1px solid rgba(156, 156, 156, 1) !important;
+}
+
+div.form > form li > div.choose::after,
+div.form > form ul > li > div.required::after {
+  color: rgba(156, 156, 156, 1);
+}
+
+div.form > form li > div > button {
+  height: 3.125em;
+  border-radius: .25em;
+  font-size: .8em;
+  line-height: 3.125em;
+  text-transform: uppercase;
+  background-color: rgba(244, 173, 61, 1);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 900;
+}
+
+div.form > form li > div > button:hover {
+  background-color: rgba(224, 153, 41, 1);
+}
+
+div.form > form li > div,
+div.form > form li > div > button,
+div.form > form li > div > label > textarea,
+div.form > form li > div > label > input {
+  border-radius: .25em;
+}
+
+/* developer */
+
+footer > div.footer.copyright > a.developer {
+  background-image: url(../img/developer.svg?301120190201);
+}
+
+footer > div.footer.copyright > a.developer::after {
+  color: rgba(156, 156, 156, 1);
+}
+
+footer > div.footer.copyright > a.developer:hover::after {
+  color: rgba(255, 255, 255, 1);
+}
+
+ol.social > li {
+  font-size: .8em;
+  padding: 1.5em 0;
+}
+
+ol.social > li > a {
+  color: rgba(58, 58, 58, 1);
+}
+
+ol.social > li > a:hover {
+  color: rgba(156, 156, 156, 1);
+}
+
+ol.social > li > a::before {
+  background-color: rgba(244, 173, 61, 1);
+}
+
+ol.social > li > a.instagram::after {
+  color: rgba(255, 255, 255, 1);
+}
+
+.header-lang:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.header-lang-span::before,
+.header-lang-span::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 2em;
+  height: 2em;
+  border-radius: .25em;
+  font-family: "icomoon" !important;
+  font-size: 1.25em;
+  font-weight: normal;
+  line-height: 2.1em;
+  text-align: center;
+}
+
+.header-lang-span::before {
+  content: "";
+}
+
+.header-lang-span::after {
+  transform: scale(1.4);
+  transform-origin: center center;
+  content: "\e90b";
+}
+
+@media (min-width : 1201px) {
+  .header {
+    display: none;
+  }
+
+  h1,
+  h2,
+  div.form > div > span {
+    font-size: 2.4em;
+  }
+
+  h3 {
+    font-size: 2.3em;
+  }
+
+  h4 {
+    font-size: 2.2em;
+  }
+
+  div.container > div.workspace > div:first-child > div.box > div:first-child {
+    padding: 1.5em 0;
+  }
+
+  div.container > div.workspace > div:first-child > div.box > div:last-child {
+    margin-bottom: 4.6em;
+  }
+}
+
+@media (min-width : 961px) and (max-width : 1200px) {
+  .header {
+    display: none;
+  }
+
+  h1,
+  h2,
+  div.form > div > span {
+    font-size: 2.2em;
+  }
+
+  h3 {
+    font-size: 2.1em;
+  }
+
+  h4 {
+    font-size: 2em;
+  }
+
+  div.container > div.workspace > div:first-child > div.box > div:first-child {
+    padding: 1.5em 0;
+  }
+
+  div.container > div.workspace > div:first-child > div.box > div:last-child {
+    margin-bottom: 4.6em;
+  }
+}
+
+@media (min-width : 721px) and (max-width : 960px) {
+  .header {
+    height: 4.5em;
+  }
+
+  h1,
+  h2,
+  div.form > div > span {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.9em;
+  }
+
+  h4 {
+    font-size: 1.8em;
+  }
+
+  div.container > div.workspace > div:last-child,
+  div.container > div.workspace > div:first-child {
+    padding-top: 4.5em;
+  }
+
+  .aside-logo {
+    display: none;
+  }
+}
+
+@media (min-width : 481px) and (max-width : 720px) {
+  .header {
+    height: 4em;
+  }
+
+  h1,
+  h2,
+  div.form > div > span {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.7em;
+  }
+
+  h4 {
+    font-size: 1.6em;
+  }
+
+  div.container > div.workspace > div:last-child,
+  div.container > div.workspace > div:first-child {
+    padding-top: 4em;
+  }
+
+  .aside-logo {
+    display: none;
+  }
+}
+
+@media (max-width : 480px) {
+  .header {
+    height: 3.5em;
+  }
+
+  .aside-phone {
+    padding: .5em 0;
+  }
+
+  .aside-phone-span {
+    margin-top: 0;
+    transform: scale(1.16);
+  }
+
+  h1,
+  h2,
+  div.form > div > span {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.4em;
+  }
+
+  div.container > div.workspace > div:first-child,
+  div.container > div.workspace > div:last-child {
+    padding-top: 3.5em;
+  }
+
+  .aside-logo {
+    display: none;
+  }
+}

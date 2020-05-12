@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "accent";
+  font-display: swap;
+  src: local("Spellkid Regular"), local("Spellkid-Regular"), url("Spellkid-Regular.eot");
+  src: url("Spellkid-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Spellkid-Regular.woff2") format("woff2"),
+    url("Spellkid-Regular.woff") format("woff"),
+    url("Spellkid-Regular.otf") format("opentype"),
+    url("Spellkid-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
