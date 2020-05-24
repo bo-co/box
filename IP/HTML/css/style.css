@@ -76,9 +76,12 @@ a {
 }
 
 .wrapper,
-.alpha,
 .container {
   width: 100%;
+}
+
+.alpha {
+  width: calc(100% - 16em);
 }
 
 .wrapper {

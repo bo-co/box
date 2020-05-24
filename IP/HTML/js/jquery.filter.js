@@ -1,6 +1,6 @@
 $(document).ready(function () {
   "use strict";
-  $(".catalog-section-header-filter").on("click", function () {
+  $(".filter-button-div-span").on("click", function () {
     $(".wrapper").toggleClass("selected");
   });
   return false;
