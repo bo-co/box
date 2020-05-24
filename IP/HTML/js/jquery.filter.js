@@ -3,6 +3,9 @@ $(document).ready(function () {
   $(".filter-button-div-span").on("click", function () {
     $(".wrapper").toggleClass("selected");
   });
+  $(".filter-close").on("click", function () {
+    $(".wrapper").toggleClass("selected");
+  });
   return false;
 });
 

@@ -63,25 +63,20 @@ a {
 
 .wrapper,
 .alpha,
-.container,
-.filter {
+.container {
   height: 100%;
 }
 
 .wrapper,
-.container,
-.filter {
+.container {
   position: relative;
   overflow: hidden;
 }
 
 .wrapper,
-.container {
-  width: 100%;
-}
-
+.container,
 .alpha {
-  width: calc(100% - 16em);
+  width: 100%;
 }
 
 .wrapper {
@@ -92,20 +87,19 @@ a {
 }
 
 .alpha,
-.container,
-.filter {
+.container {
   left: 0;
 }
 
-.container,
-.filter {
+.container {
+  z-index: 10;
   transition: left .3s ease;
 }
 
 .alpha {
   position: absolute;
   top: 0;
-  z-index: 100;
+  z-index: 120;
   background-color: rgba(255, 255, 255, .5);
 }
 
@@ -114,22 +108,15 @@ a {
   min-width: 100%;
 }
 
-.filter {
-  min-width: 16em;
-  overflow: visible !important;
-  background-color: rgba(220, 220, 220, 1);
-}
-
-.wrapper:not(.selected) > .alpha {
+.wrapper:not(.selected) > .container > .alpha {
   display: none;
 }
 
-.wrapper.selected > .alpha {
+.wrapper.selected > .container > .alpha {
   display: block;
 }
 
-.wrapper.selected > .container,
-.wrapper.selected > .filter {
+.wrapper.selected > .container {
   left: -16em;
 }
 
