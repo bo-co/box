@@ -313,6 +313,10 @@ ol.filter-form-list > li > div > span {
   font-weight: 400;
 }
 
+ol.filter-form-list > li > div > input {
+  display: none;
+}
+
 
 
 
