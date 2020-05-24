@@ -199,11 +199,11 @@ ul.filter-form-list > li:not(.selected) > ol {
 }
 
 ul.filter-form-list > li:first-child {
-  padding-top: 2.5em;
+  padding-top: 1.5em;
 }
 
 ul.filter-form-list > li:last-child {
-  padding-bottom: 2.5em;
+  padding-bottom: 1.5em;
 }
 
 .filter-form-list > li,
