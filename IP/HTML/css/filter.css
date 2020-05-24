@@ -99,6 +99,69 @@ article > div.content {
   transform: rotate(-45deg);
 }
 
+.filter-ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.filter-ul > li:first-child {
+  flex: 1;
+}
+
+.filter-ul > li:last-child {
+  height: 4.5em;
+}
+
+.filter-ul-li-div {
+  display: flex;
+  padding: .5em;
+  border-top: solid 1px rgba(213, 213, 213, 1);
+}
+
+.filter-ul-li-div > button {
+  flex: 1;
+  position: relative;
+  font-size: .75em;
+  height: calc(1em/3 + 3em);
+  margin: calc(1em/3*2);
+  border-radius: calc(1em/3);
+  line-height: calc(1em/3 + 3em);
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  transition: all .3s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.filter-ul-li-div-view {
+  border: solid 2px rgba(189, 54, 47, 1);
+  background-color: rgba(189, 54, 47, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.filter-ul-li-div-view:hover {
+  border: solid 2px rgba(159, 24, 17, 1);
+  background-color: rgba(159, 24, 17, 1);
+}
+
+.filter-ul-li-div-reset {
+  border: solid 2px rgba(213, 213, 213, 1);
+  background-color: rgba(213, 213, 213, .5);
+  color: rgba(75, 75, 75, 1);
+}
+
+.filter-ul-li-div-reset:hover {
+  background-color: rgba(213, 213, 213, 1);
+}
+
+
 
 
 

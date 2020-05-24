@@ -1,15 +1,12 @@
 $(document).ready(function () {
   "use strict";
-  $(".filter-button-div-span").on("click", function () {
-    $(".wrapper").toggleClass("selected");
-  });
-  $(".filter-close").on("click", function () {
+  $(".filter-toggle").on("click", function () {
     $(".wrapper").toggleClass("selected");
   });
   return false;
 });
 
-$(document).on('touchstart  mousedown', '.wrapper > .alpha', function () {
+$(document).on('touchstart  mousedown', '.wrapper > .container > .alpha', function () {
   if ($(".wrapper").hasClass("selected")) {
     $(".wrapper").removeClass("selected");
   }
