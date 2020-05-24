@@ -119,7 +119,7 @@ article > div.content {
 
 .filter-ul-li-div {
   display: flex;
-  padding: .5em;
+  padding: .5em 1em;
   border-top: solid 1px rgba(213, 213, 213, 1);
 }
 
