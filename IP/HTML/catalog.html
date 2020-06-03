@@ -46,7 +46,7 @@
 </head>
 
 <body onresize="isResize();" onload="isResize();">
-  <div class="wrapper">
+  <div class="wrapper selected">
     <div class="container">
       <div class="alpha"></div>
       <!-- header -->
@@ -326,8 +326,9 @@
                           <blockquote>Преамбула: съешь ещё этих мягких французских булок да выпей чаю</blockquote>
                         </header>
                         <!-- каталог товаров :: начало -->
-                        <div class="catalog-section">
+                        <div class="catalog-section centering">
                           <ul class="catalog-section-items">
+
                             <li class="catalog-section-item">
                               <a class="catalog-section-item-a" href="product.html" title="Стол рабочий">
                                 <span class="catalog-section-item-image" style="background-image: url(img/other_1906_1.jpeg)"></span>
@@ -358,6 +359,8 @@
                                 </div>
                               </div>
                             </li>
+
+
                             <li class="catalog-section-item">
                               <a class="catalog-section-item-a" href="product.html" title="Стол эргономичный левый">
                                 <span class="catalog-section-item-image" style="background-image: url(img/other_1906_2.jpeg)"></span>
@@ -416,13 +419,15 @@
                   <!-- /article -->
                   <!-- footer -->
                   <li class="footer-li">
+
                     <div class="contacts-header alignment">
                       <div class="contacts-header-div centering">
                         <span class="contacts-header-div-span">
-                          <span class="contacts-header-div-span-span accent">Контакты</span>
+                          <span class="accent">Контакты</span>
                         </span>
                       </div>
                     </div>
+
                     <footer class="alignment">
                       <div id="feedback" class="form feedback">
                         <div>
@@ -1103,6 +1108,9 @@
           </div>
         </li>
         <li>
+          <span class="filter-ul-li-span">
+            <span>Найдено 95 товаров</span>
+          </span>
           <div class="filter-ul-li-div">
             <button class="accent filter-ul-li-div-view filter-toggle" type="button">Показать</button>
             <button class="accent filter-ul-li-div-reset" type="button">Сбросить</button>

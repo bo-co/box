@@ -381,18 +381,14 @@ div.container > div.list > div > div > ul > li:hover {
   border-left: 1px solid rgba(25, 25, 25, .05);
 }
 
-.contacts-header {
-  border-bottom: solid 1em rgba(189, 54, 47, 1);
+.catalog-section {
+  padding: 0 !important;
 }
 
-.contacts-header-div-span,
-.contacts-header-div::before,
-.contacts-header-div-span::before {
-  background-color: rgba(189, 54, 47, 1);
-}
-
-.contacts-header-div-span {
-  color: rgba(255, 255, 255, 1);
+.catalog-section > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none !important;
 }
 
 @media (min-width : 1201px) {

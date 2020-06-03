@@ -1,20 +1,12 @@
 @charset "UTF-8";
 
-.catalog-section {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: .5rem 0 0 0 !important;
-}
-
 .catalog-section-items {
   position: relative;
   left: -.5em;
   display: flex;
   flex-wrap: wrap;
-  list-style: none !important;
   width: calc(100% + 1em);
-  margin: 0;
-  padding: 0;
+  margin-top: 1.5em !important;
 }
 
 .catalog-section-item {

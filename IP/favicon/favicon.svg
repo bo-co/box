@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165 142">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #BD362F;
+      }
+
+    </style>
+  </defs>
+  <title>logo for interior price</title>
+  <path class="cls-1" d="M95.23,155.12Zm26-82.37H77.84L95.14,42.8l8.84,15h17.19L95.23,12.84,52,87.73h69.27l30.27,52.41h-30.6l-17.3-30a14.94,14.94,0,0,0-12.93-7.47H52A14.94,14.94,0,0,0,39,110.17l-25.95,45H95.23l-8.65-15H38.93l13-22.46H90.79l21.62,37.44h65L134.13,80.21A14.93,14.93,0,0,0,121.2,72.75Z" transform="translate(-13.09 -12.84)" />
+</svg>

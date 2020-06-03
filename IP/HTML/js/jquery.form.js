@@ -3,8 +3,7 @@ var el = null,
   check = null,
   form = null,
   params = null,
-  baron__choose = null,
-  list__elements = list__elements;
+  baron__choose = null;
 
 function clear(el) {
   "use strict";
@@ -119,50 +118,52 @@ function isChoose(el) {
   if ($("div.container > div.list").length !== 0) {
     $("div.container > div.list").remove();
   } else {
-    if (list__elements.length !== 0) {
-      $("<div>", {
-        "class": "list",
-        "style": "display: block; width:" + el.width + "px; left:" + el.offset.left + "px; top:" + (el.offset.top + el.height + 5) + "px"
-      }).appendTo("div.container");
-      $("<div>", {
-        "class": "baron baron__choose"
-      }).appendTo("div.container > div.list");
-      $("<div>", {
-        "class": "baron-scroller"
-      }).appendTo("div.container > div.list > div.baron.baron__choose");
-      $("<ul>").appendTo("div.container > div.list > div.baron.baron__choose > div.baron-scroller");
-      for (var i = 0; i < list__elements.length; i += 1) {
-        $("<li>", {
-          "class": "item_" + i,
-          "data-form": el.form,
-          "data-field": el.list
-        }).appendTo("div.container > div.list > div.baron.baron__choose > div.baron-scroller > ul");
-        $("<span>", {
-          "text": list__elements[i].value
-        }).appendTo("div.container > div.list > div.baron.baron__choose > div.baron-scroller > ul > li.item_" + i);
+    $.getJSON('/resources/json/utheme.json?' + $.now(), function (data) {
+      if (data.length !== 0) {
+        $("<div>", {
+          "class": "list",
+          "style": "display: block; width:" + el.width + "px; left:" + el.offset.left + "px; top:" + (el.offset.top + el.height + 5) + "px"
+        }).appendTo("div.container");
+        $("<div>", {
+          "class": "baron baron__choose"
+        }).appendTo("div.container > div.list");
+        $("<div>", {
+          "class": "baron-scroller"
+        }).appendTo("div.container > div.list > div.baron.baron__choose");
+        $("<ul>").appendTo("div.container > div.list > div.baron.baron__choose > div.baron-scroller");
+        $.each(data, function (i, object) {
+          $("<li>", {
+            "class": "item_" + i,
+            "data-form": el.form,
+            "data-field": el.list
+          }).appendTo("div.container > div.list > div.baron.baron__choose > div.baron-scroller > ul");
+          $("<span>", {
+            "text": object.value
+          }).appendTo("div.container > div.list > div.baron.baron__choose > div.baron-scroller > ul > li.item_" + i);
+        });
+        $("<div>", {
+          "class": "baron-track"
+        }).appendTo("div.container > div.list > div.baron.baron__choose");
+        $("<div>", {
+          "class": "baron-bar"
+        }).appendTo("div.container > div.list > div.baron.baron__choose > div.baron-track");
+        baron__choose = baron({
+          root: "div.container > div.list > div.baron.baron__choose",
+          scroller: "div.container > div.list > div.baron.baron__choose > div.baron-scroller",
+          bar: "div.container > div.list > div.baron.baron__choose > div.baron-track > div.baron-bar"
+        }).autoUpdate();
+        $("div.container > div.list > div.baron.baron__choose > div.baron-scroller").on("scroll", $.debounce(250, true, function () {
+          $("div.container > div.list > div.baron.baron__choose > div.baron-track > div.baron-bar").css({
+            "opacity": "0.5"
+          });
+        }));
+        $("div.container > div.list > div.baron.baron__choose > div.baron-scroller").on("scroll", $.debounce(500, function () {
+          $("div.container > div.list > div.baron.baron__choose > div.baron-track > div.baron-bar").css({
+            "opacity": "0"
+          });
+        }));
       }
-      $("<div>", {
-        "class": "baron-track"
-      }).appendTo("div.container > div.list > div.baron.baron__choose");
-      $("<div>", {
-        "class": "baron-bar"
-      }).appendTo("div.container > div.list > div.baron.baron__choose > div.baron-track");
-      baron__choose = baron({
-        root: "div.container > div.list > div.baron.baron__choose",
-        scroller: "div.container > div.list > div.baron.baron__choose > div.baron-scroller",
-        bar: "div.container > div.list > div.baron.baron__choose > div.baron-track > div.baron-bar"
-      }).autoUpdate();
-      $("div.container > div.list > div.baron.baron__choose > div.baron-scroller").on("scroll", $.debounce(250, true, function () {
-        $("div.container > div.list > div.baron.baron__choose > div.baron-track > div.baron-bar").css({
-          "opacity": "0.5"
-        });
-      }));
-      $("div.container > div.list > div.baron.baron__choose > div.baron-scroller").on("scroll", $.debounce(500, function () {
-        $("div.container > div.list > div.baron.baron__choose > div.baron-track > div.baron-bar").css({
-          "opacity": "0"
-        });
-      }));
-    }
+    });
   }
   return false;
 }

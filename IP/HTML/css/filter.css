@@ -138,7 +138,25 @@ article > div.content {
 }
 
 .filter-ul > li:last-child {
-  height: 4.5em;
+  height: 6.9em;
+}
+
+.filter-ul-li-span,
+.filter-ul-li-span > span {
+  display: block;
+}
+
+.filter-ul-li-span {
+  padding: .5em 1.5em;
+  background-color: rgba(115, 115, 115, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.filter-ul-li-span > span {
+  font-weight: 600;
+  text-align: center;
+  transform: scale(.8);
+  transform-origin: center center;
 }
 
 .filter-ul-li-div {
