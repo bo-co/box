@@ -162,7 +162,8 @@ div.container > div.workspace > div:first-child > div.box > div:last-child > div
   color: rgba(255, 255, 255, 1);
 }
 
-div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > div {
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > div,
+div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > ul > li > div {
   background-color: rgba(26, 26, 26, 1);
 }
 
@@ -198,6 +199,14 @@ footer {
 
 footer > div.footer.copyright {
   color: rgba(165, 165, 165, 1);
+}
+
+footer > div.footer.copyright > a {
+  color: rgba(230, 86, 82, 1);
+}
+
+footer > div.footer.copyright > a:hover {
+  color: rgba(255, 255, 255, 1);
 }
 
 /* form */
@@ -294,7 +303,7 @@ footer > div.footer.copyright > a.developer::after {
 }
 
 footer > div.footer.copyright > a.developer:hover::after {
-  color: rgba(77, 77, 77, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 /* список выбора */
