@@ -18,11 +18,11 @@
       }
 
       .cls-3 {
-        fill: rgba(224, 153, 41, 1);
+        fill: rgba(244, 173, 61, 1);
       }
 
       .cls-4 {
-        stroke: rgba(224, 153, 41, 1);
+        stroke: rgba(244, 173, 61, 1);
         stroke-width: 5px;
         stroke-dasharray: 12;
       }
