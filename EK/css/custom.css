@@ -182,15 +182,15 @@ div.form > form li > div > label > input {
 /* developer */
 
 footer > div.footer.copyright > a.developer {
-  background-image: url(../img/developer.svg?050620201450);
+  background-image: url(../img/developer.svg?050620201532);
 }
 
 footer > div.footer.copyright > a.developer::after {
-  color: rgba(156, 156, 156, 1);
+  color: rgba(174, 174, 174, 1);
 }
 
 footer > div.footer.copyright > a.developer:hover::after {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(232, 232, 232, 1);
 }
 
 ol.social > li {
@@ -203,7 +203,7 @@ ol.social > li > a {
 }
 
 ol.social > li > a:hover {
-  color: rgba(156, 156, 156, 1);
+  color: rgba(116, 116, 116, 1);
 }
 
 ol.social > li > a::before {
