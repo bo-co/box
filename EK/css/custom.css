@@ -7,8 +7,8 @@ body {
 }
 
 a {
-  color: rgba(244, 173, 61, 1);
-  border-bottom: 1px solid rgba(244, 173, 61, .5);
+  color: rgba(224, 153, 41, 1);
+  border-bottom: 1px solid rgba(224, 153, 41, .5);
 }
 
 a:hover {
