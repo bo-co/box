@@ -134,7 +134,7 @@ div.form > form li > div > label > textarea + span,
 div.form > form li > div > label > input[type=text] + span,
 div.form > form li > div > label > input[type=email] + span,
 div.form > form li > div > label > input[type=tel] + span {
-  color: rgba(146, 146, 146, 1);
+  color: rgba(136, 136, 136, 1);
 }
 
 div.form > form li > div > label > textarea,
