@@ -57,7 +57,7 @@ ol.social > li > a {
 }
 
 .header-logo-span {
-  background-image: url(../img/logo.small.svg?100520201549);
+  background-image: url(../img/logo.small.svg?050620201450);
 }
 
 .header-lang {
@@ -88,7 +88,7 @@ div.container > div.workspace > div:first-child {
 
 .aside-logo-span {
   height: 6em;
-  background-image: url(../img/logo.svg?100520201549);
+  background-image: url(../img/logo.svg?050620201450);
 }
 
 div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li,
@@ -182,7 +182,7 @@ div.form > form li > div > label > input {
 /* developer */
 
 footer > div.footer.copyright > a.developer {
-  background-image: url(../img/developer.svg?301120190201);
+  background-image: url(../img/developer.svg?050620201450);
 }
 
 footer > div.footer.copyright > a.developer::after {
