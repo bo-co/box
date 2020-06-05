@@ -325,12 +325,14 @@ div.container > div.list > div > div > ul > li:hover {
   .article-image-header,
   div.form > div > span,
   article > div.content > div > h1,
-  article > div.content > div > h2,
   article > div.content > header h1 {
     font-size: 2.4em;
   }
 
-  article > div.content > div > h3 {
+  article > div.content > div > h2,
+  article > div.content > header h2,
+  article > div.content > div > h3,
+  article > div.content > header h3 {
     font-size: 2.3em;
   }
 
@@ -367,12 +369,14 @@ div.container > div.list > div > div > ul > li:hover {
   .article-image-header,
   div.form > div > span,
   article > div.content > div > h1,
-  article > div.content > div > h2,
   article > div.content > header h1 {
     font-size: 2.2em;
   }
 
-  article > div.content > div > h3 {
+  article > div.content > div > h2,
+  article > div.content > header h2,
+  article > div.content > div > h3,
+  article > div.content > header h3 {
     font-size: 2.1em;
   }
 
@@ -413,12 +417,14 @@ div.container > div.list > div > div > ul > li:hover {
   .article-image-header,
   div.form > div > span,
   article > div.content > div > h1,
-  article > div.content > header h1,
-  article > div.content > div > h2 {
+  article > div.content > header h1 {
     font-size: 2em;
   }
 
-  article > div.content > div > h3 {
+  article > div.content > div > h2,
+  article > div.content > header h2,
+  article > div.content > div > h3,
+  article > div.content > header h3 {
     font-size: 1.9em;
   }
 
@@ -455,12 +461,14 @@ div.container > div.list > div > div > ul > li:hover {
   .article-image-header,
   div.form > div > span,
   article > div.content > div > h1,
-  article > div.content > header h1,
-  article > div.content > div > h2 {
+  article > div.content > header h1 {
     font-size: 1.8em;
   }
 
-  article > div.content > div > h3 {
+  article > div.content > div > h2,
+  article > div.content > header h2,
+  article > div.content > div > h3,
+  article > div.content > header h3 {
     font-size: 1.7em;
   }
 
@@ -498,12 +506,14 @@ div.container > div.list > div > div > ul > li:hover {
   .article-image-header,
   div.form > div > span,
   article > div.content > div > h1,
-  article > div.content > div > h2,
   article > div.content > header h1 {
     font-size: 1.6em;
   }
 
-  article > div.content > div > h3 {
+  article > div.content > div > h2,
+  article > div.content > header h2,
+  article > div.content > div > h3,
+  article > div.content > header h3 {
     font-size: 1.5em;
   }
 
