@@ -28,7 +28,7 @@ div.form > div > span {
 }
 
 .header-yellow {
-  color: rgba(244, 173, 61, 1);
+  color: rgba(224, 153, 41, 1);
 }
 
 footer > div.footer.copyright > a,
@@ -107,7 +107,7 @@ div.container > div.workspace > div:first-child > div.box > div:last-child > div
 div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:first-child > nav > ul > li > ul > li > div > span,
 div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:nth-child(2) > nav > ul > li > div > span,
 div.container > div.workspace > div:first-child > div.box > div:last-child > div > ul > li:nth-child(2) > nav > ul > li > ul > li > div > span {
-  color: rgba(244, 173, 61, 1);
+  color: rgba(224, 153, 41, 1);
 }
 
 /* footer */
@@ -163,13 +163,13 @@ div.form > form li > div > button {
   font-size: .8em;
   line-height: 3.125em;
   text-transform: uppercase;
-  background-color: rgba(244, 173, 61, 1);
+  background-color: rgba(224, 153, 41, 1);
   color: rgba(255, 255, 255, 1);
   font-weight: 900;
 }
 
 div.form > form li > div > button:hover {
-  background-color: rgba(224, 153, 41, 1);
+  background-color: rgba(204, 133, 21, 1);
 }
 
 div.form > form li > div,
@@ -207,7 +207,7 @@ ol.social > li > a:hover {
 }
 
 ol.social > li > a::before {
-  background-color: rgba(244, 173, 61, 1);
+  background-color: rgba(224, 153, 41, 1);
 }
 
 ol.social > li > a.instagram::after {
