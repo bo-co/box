@@ -2,24 +2,23 @@
 
 .catalog-section-items {
   position: relative;
-  left: -.5em;
   display: flex;
   flex-wrap: wrap;
-  width: calc(100% + 1em);
+  width: 100%;
   margin-top: 1.5em !important;
 }
 
 .catalog-section-item {
   position: relative;
-  margin: .5em;
+  margin: .5em 0;
   padding-bottom: 2.5em;
-  border: solid 1px rgba(230, 230, 230, 1);
+  border: solid 1px rgba(230, 230, 230, 0);
   border-radius: .25em;
   transition: border .3s ease;
 }
 
 .catalog-section-item:hover {
-  border: solid 1px rgba(189, 54, 47, 1);
+  border: solid 1px rgba(230, 230, 230, 1);
 }
 
 .catalog-section-item-a,
@@ -142,30 +141,30 @@
 
 @media (min-width : 1201px) {
   .catalog-section-item {
-    width: calc(100% / 3 - 1em - 2px);
+    width: calc(100% / 3 - 2px);
   }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
   .catalog-section-item {
-    width: calc(100% / 2 - 1em - 2px);
+    width: calc(100% / 2 - 2px);
   }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
   .catalog-section-item {
-    width: calc(100% / 3 - 1em - 2px);
+    width: calc(100% / 3 - 2px);
   }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
   .catalog-section-item {
-    width: calc(100% / 2 - 1em - 2px);
+    width: calc(100% / 2 - 2px);
   }
 }
 
 @media (max-width : 480px) {
   .catalog-section-item {
-    width: calc(100% - 1em - 2px);
+    width: calc(100% - 2px);
   }
 }
