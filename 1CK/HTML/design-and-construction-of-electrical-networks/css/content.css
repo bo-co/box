@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+article > div.content > div {
+  padding: 0 0 .5rem 0;
+}
+
+.blockquote-content {
+  max-width: 640px;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+.advantage,
+.plan {
+  position: relative;
+  left: -1em;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 2em);
+  padding: calc(1rem - 1em) 0;
+  list-style: none !important;
+}
+
+.plan {
+  margin: 0;
+}
+
+.advantage {
+  margin: 0 0 1rem 0;
+  justify-content: center;
+}
+
+.advantage::after {
+  display: block;
+  width: calc(100% - 2em);
+  height: 1px;
+  position: absolute;
+  left: 1em;
+  bottom: 0;
+  z-index: 10;
+  content: "";
+  background-color: rgba(180, 180, 180, 1);
+}
+
+.advantage-item {
+  margin: 0 1em 2em 1em;
+}
+
+.advantage-item > span:last-child {
+  padding-top: 1em;
+}
+
+.plan-item,
+.advantage-item-div {
+  position: relative;
+}
+
+.advantage-item-div::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantage-item-div::before {
+  background-position: 50% 0%;
+}
+
+.advantage-item:first-child > .advantage-item-div::before {
+  background-image: url(../img/advantage.1.svg?301120190201);
+}
+
+.advantage-item:last-child > .advantage-item-div::before {
+  background-image: url(../img/advantage.2.svg?301120190201);
+}
+
+.advantage-item > span:last-child {
+  display: block;
+}
+
+.plan-item > span,
+.plan-item-ol > li > span,
+.plan-item-ol > li,
+div.form:not(.success) > div > blockquote {
+  display: block;
+}
+
+.plan-item {
+  display: inherit;
+  align-items: center;
+  flex-wrap: wrap;
+  width: calc(100% - 2em);
+  min-height: 3.5em;
+  margin: 1em;
+  padding-left: 5em;
+}
+
+.plan-item::before {
+  display: block;
+  width: 3.5em;
+  height: 3.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  content: "";
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.plan-item:not(.guarantee):first-child::before {
+  background-image: url(../img/plan.1.svg?301120190201);
+}
+
+.plan-item:not(.guarantee):nth-child(2)::before {
+  background-image: url(../img/plan.2.svg?301120190201);
+}
+
+.plan-item:not(.guarantee):nth-child(3)::before {
+  background-image: url(../img/plan.3.svg?301120190201);
+}
+
+.plan-item:not(.guarantee):last-child::before {
+  background-image: url(../img/plan.4.svg?301120190201);
+}
+
+.plan-item.guarantee::before {
+  background-image: url(../img/guarantee.svg?301120190201);
+}
+
+.plan-item > span:first-child {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 2.5em;
+  padding: 0 0 .5em 0;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.plan-item-ol {
+  width: 100%;
+  height: 100%;
+  margin: 2em 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plan-item-ol > li {
+  position: relative;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+.plan-item-ol > li::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: calc(100% + 2.5em);
+  z-index: 10;
+  width: 1em;
+  height: 1em;
+  background-color: rgba(255, 255, 255, 1);
+  border: solid 4px rgba(200, 56, 52, 1);
+  border-radius: 50%;
+  content: "";
+}
+
+.plan-item-ol > li:not(:last-child)::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: calc(100% + 3em + 2px);
+  z-index: 5;
+  width: 4px;
+  height: 100%;
+  background-color: rgba(200, 56, 52, 1);
+  content: "";
+}
+
+.plan-item-ol > li > span {
+  font-size: 1em;
+}
+
+.plan-item-ol > li > ul {
+  padding: .5em 0 0 1em;
+  font-size: .8em;
+}
+
+.content-image {
+  position: relative;
+  margin: 0 0 1rem 0;
+  padding: 0 1rem;
+  color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+}
+
+.content-image-div {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  background-image: url(../img/bg.svg);
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width : 1201px) {
+  .advantage-item {
+    width: calc(100% / 2 - 2em);
+  }
+
+  .advantage-item-div {
+    padding-top: 35%;
+    margin-bottom: 1em;
+  }
+
+  .advantage-item > span {
+    text-align: center;
+  }
+
+  .advantage-item-span {
+    display: block;
+    font-size: 1.2em;
+  }
+
+  .advantage-item > span:last-child {
+    font-size: .9em;
+  }
+
+  .content-image {
+    width: calc(100vw - 16em);
+    left: calc(-1*(100vw - 16em - 100%)/2);
+  }
+}
+
+@media (min-width : 961px) and (max-width : 1200px) {
+  .advantage-item {
+    width: calc(100% / 2 - 2em);
+  }
+
+  .advantage-item-div {
+    padding-top: 35%;
+    margin-bottom: 1em;
+  }
+
+  .advantage-item > span {
+    text-align: center;
+  }
+
+  .advantage-item-span {
+    display: block;
+    font-size: 1.1em;
+  }
+
+  .advantage-item > span:last-child {
+    font-size: .85em;
+  }
+
+  .content-image {
+    width: calc(100vw - 16em);
+    left: calc(-1*(100vw - 16em - 100%)/2);
+  }
+}
+
+@media (min-width : 721px) and (max-width : 960px) {
+  .advantage-item {
+    width: calc(100% / 2 - 2em);
+  }
+
+  .advantage-item-div {
+    padding-top: 35%;
+    margin-bottom: 1em;
+  }
+
+  .advantage-item > span {
+    text-align: center;
+  }
+
+  .advantage-item-span {
+    display: block;
+  }
+
+  .advantage-item > span:last-child {
+    font-size: .8em;
+  }
+
+  .content-image {
+    width: 100vw;
+    left: calc(-1*(100vw - 100%)/2);
+  }
+}
+
+@media (min-width : 481px) and (max-width : 720px) {
+  .advantage-item {
+    width: calc(100% / 2 - 2em);
+  }
+
+  .advantage-item-div {
+    padding-top: 35%;
+    margin-bottom: 1em;
+  }
+
+  .advantage-item > span {
+    text-align: center;
+  }
+
+  .advantage-item-span {
+    display: block;
+    font-size: .9em;
+  }
+
+  .advantage-item > span:last-child {
+    font-size: .8em;
+  }
+
+  .content-image {
+    width: 100vw;
+    left: calc(-1*(100vw - 100%)/2);
+  }
+}
+
+@media (max-width : 480px) {
+  .advantage {
+    padding: 1rem 0 0 0;
+  }
+
+  .advantage-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 2em);
+  }
+
+  .advantage-item-div {
+    width: 35%;
+    padding-top: 35%;
+  }
+
+  .advantage-item-span {
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    width: 65%;
+    min-height: 5.5em;
+  }
+
+  .advantage-item > span:last-child {
+    width: 100%;
+    font-size: .8em;
+  }
+
+  .content-image {
+    width: 100vw;
+    left: calc(-1*(100vw - 100%)/2);
+  }
+}
