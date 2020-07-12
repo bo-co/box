@@ -10,24 +10,24 @@ article > div.content > div {
   font-weight: 500;
 }
 
-.advantage,
-.plan {
+.blockquote-settings {
+  color: rgba(77, 77, 77, 1) !important;
+}
+
+div.form:not(.success) > div > blockquote {
+  display: block;
+}
+
+.advantage {
   position: relative;
   left: -1em;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: calc(100% + 2em);
   padding: calc(1rem - 1em) 0;
-  list-style: none !important;
-}
-
-.plan {
-  margin: 0;
-}
-
-.advantage {
   margin: 0 0 1rem 0;
-  justify-content: center;
+  list-style: none !important;
 }
 
 .advantage::after {
@@ -46,11 +46,6 @@ article > div.content > div {
   margin: 0 1em 2em 1em;
 }
 
-.advantage-item > span:last-child {
-  padding-top: 1em;
-}
-
-.plan-item,
 .advantage-item-div {
   position: relative;
 }
@@ -76,18 +71,129 @@ article > div.content > div {
   background-image: url(../img/advantage.1.svg?301120190201);
 }
 
-.advantage-item:last-child > .advantage-item-div::before {
+.advantage-item:nth-child(2) > .advantage-item-div::before {
   background-image: url(../img/advantage.2.svg?301120190201);
 }
 
-.advantage-item > span:last-child {
+.advantage-item:last-child > .advantage-item-div::before {
+  background-image: url(../img/advantage.3.svg?301120190201);
+}
+
+.steps,
+.step-item,
+.step-item-div,
+.step-item-span-number,
+.service-item-div {
+  position: relative;
+}
+
+.steps::before,
+.steps::after,
+.step-item::before,
+.step-item::after,
+.step-item-span-number {
   display: block;
+}
+
+.steps {
+  width: calc(100% - 2em);
+  margin: 0 1em;
+  padding: 0 0 calc(1.4em + .5rem) 0;
+  list-style: none !important;
+  counter-reset: num;
+}
+
+.steps.border::after {
+  display: block;
+  width: calc(100% + 2em);
+  height: 1px;
+  position: absolute;
+  left: -1em;
+  bottom: 0;
+  z-index: 10;
+  content: "";
+  background-color: rgba(180, 180, 180, 1);
+}
+
+.step-item {
+  padding: .5em 0 .5em 4em;
+}
+
+.step-item:not(:last-child)::before {
+  position: absolute;
+  left: .7em;
+  top: 2.1em;
+  z-index: 10;
+  width: 4px;
+  height: 100%;
+  content: "";
+  background-color: rgba(200, 56, 52, 1);
+}
+
+.step-item::after {
+  position: absolute;
+  top: 1.4em;
+  left: 0;
+  z-index: 20;
+  width: 1.4em;
+  height: 1.4em;
+  content: counter(num);
+  counter-increment: num;
+  text-align: center;
+  border: solid 2px rgba(200, 56, 52, 1);
+  border-radius: 50%;
+  font-weight: 500;
+  transform: scale(2.1);
+  transform-origin: center center;
+}
+
+.step-item.step-item-empty::after {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(200, 56, 52, 1);
+}
+
+.step-item:not(.step-item-empty)::after {
+  background-color: rgba(200, 56, 52, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.step-item-div {
+  display: flex;
+  align-items: center;
+  min-height: 1.4em;
+  padding: 1em 0;
+}
+
+.plan {
+  position: relative;
+  left: -1em;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 2em);
+  padding: calc(1rem - 1em) 0;
+  margin: 0 0 1rem 0;
+  list-style: none !important;
+}
+
+.plan::after {
+  display: block;
+  width: calc(100% - 2em);
+  height: 1px;
+  position: absolute;
+  left: 1em;
+  bottom: 0;
+  z-index: 10;
+  content: "";
+  background-color: rgba(180, 180, 180, 1);
+}
+
+.plan-item {
+  position: relative;
 }
 
 .plan-item > span,
 .plan-item-ol > li > span,
-.plan-item-ol > li,
-div.form:not(.success) > div > blockquote {
+.plan-item-ol > li {
   display: block;
 }
 
@@ -115,22 +221,23 @@ div.form:not(.success) > div > blockquote {
   background-size: contain;
 }
 
-.plan-item:not(.guarantee):first-child::before {
+.plan-item:first-child::before {
   background-image: url(../img/plan.1.svg?301120190201);
 }
 
-.plan-item:not(.guarantee):nth-child(2)::before {
+.plan-item:nth-child(2)::before {
   background-image: url(../img/plan.2.svg?301120190201);
 }
 
-.plan-item:not(.guarantee):nth-child(3)::before {
+.plan-item:nth-child(3)::before {
   background-image: url(../img/plan.3.svg?301120190201);
 }
 
-.plan-item:not(.guarantee):last-child::before {
+.plan-item:last-child::before {
   background-image: url(../img/plan.4.svg?301120190201);
 }
-.plan-item.guarantee::before {
+
+.plan-item::before {
   background-image: url(../img/guarantee.svg?301120190201);
 }
 
@@ -138,7 +245,7 @@ div.form:not(.success) > div > blockquote {
   display: flex;
   align-items: center;
   width: 100%;
-  min-height: 2.5em;
+  min-height: 3em;
   padding: 0 0 .5em 0;
   font-weight: 500;
   font-size: 1.2em;
@@ -164,10 +271,9 @@ div.form:not(.success) > div > blockquote {
   top: 0;
   right: calc(100% + 2.5em);
   z-index: 10;
-  width: 1em;
-  height: 1em;
-  background-color: rgba(255, 255, 255, 1);
-  border: solid 4px rgba(200, 56, 52, 1);
+  width: calc(1em + 8px);
+  height: calc(1em + 8px);
+  background-color: rgba(200, 56, 52, 1);
   border-radius: 50%;
   content: "";
 }
@@ -190,143 +296,95 @@ div.form:not(.success) > div > blockquote {
 
 .plan-item-ol > li > ul {
   padding: .5em 0 0 1em;
+}
+
+.plan-item-ol > li > ul > li {
   font-size: .8em;
 }
 
-.content-image {
-  position: relative;
-  margin: 0 0 1rem 0;
-  padding: 0 1rem;
-  color: rgba(255, 255, 255, 1);
-  overflow: hidden;
-}
-
-.content-image-div {
-  min-width: 100%;
-  min-height: 100%;
+.plan-item-ol > li > ul::before {
+  display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: -1;
-  background-image: url(../img/bg.svg);
-  background-position: 0% 0%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: translate(-50%, -50%);
+  bottom: calc(100% - 1em);
+  right: calc(100% + 1em);
+  z-index: 10;
+  width: 1em;
+  height: 1em;
+  background-color: rgba(255, 255, 255, 1);
+  border: solid 4px rgba(200, 56, 52, 1);
+  border-radius: 50%;
+  content: "!";
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1em;
+  text-align: center;
+  color: rgba(200, 56, 52, 1);
 }
 
 @media (min-width : 1201px) {
   .advantage-item {
-    width: calc(100% / 2 - 2em);
+    width: calc(100% / 3 - 2em);
   }
 
   .advantage-item-div {
-    padding-top: 35%;
+    padding-top: 50%;
     margin-bottom: 1em;
-  }
-
-  .advantage-item > span {
-    text-align: center;
   }
 
   .advantage-item-span {
     display: block;
     font-size: 1.2em;
-  }
-
-  .advantage-item > span:last-child {
-    font-size: .9em;
-  }
-
-  .content-image {
-    width: calc(100vw - 16em);
-    left: calc(-1*(100vw - 16em - 100%)/2);
+    text-align: center;
   }
 }
 
 @media (min-width : 961px) and (max-width : 1200px) {
   .advantage-item {
-    width: calc(100% / 2 - 2em);
+    width: calc(100% / 3 - 2em);
   }
 
   .advantage-item-div {
-    padding-top: 35%;
+    padding-top: 50%;
     margin-bottom: 1em;
-  }
-
-  .advantage-item > span {
-    text-align: center;
   }
 
   .advantage-item-span {
     display: block;
     font-size: 1.1em;
-  }
-
-  .advantage-item > span:last-child {
-    font-size: .85em;
-  }
-
-  .content-image {
-    width: calc(100vw - 16em);
-    left: calc(-1*(100vw - 16em - 100%)/2);
+    text-align: center;
   }
 }
 
 @media (min-width : 721px) and (max-width : 960px) {
   .advantage-item {
-    width: calc(100% / 2 - 2em);
+    width: calc(100% / 3 - 2em);
   }
 
   .advantage-item-div {
-    padding-top: 35%;
+    padding-top: 50%;
     margin-bottom: 1em;
-  }
-
-  .advantage-item > span {
-    text-align: center;
   }
 
   .advantage-item-span {
     display: block;
-  }
-
-  .advantage-item > span:last-child {
-    font-size: .8em;
-  }
-
-  .content-image {
-    width: 100vw;
-    left: calc(-1*(100vw - 100%)/2);
+    text-align: center;
   }
 }
 
 @media (min-width : 481px) and (max-width : 720px) {
   .advantage-item {
-    width: calc(100% / 2 - 2em);
+    width: calc(100% / 3 - 2em);
   }
 
   .advantage-item-div {
-    padding-top: 35%;
+    padding-top: 50%;
     margin-bottom: 1em;
-  }
-
-  .advantage-item > span {
-    text-align: center;
   }
 
   .advantage-item-span {
     display: block;
     font-size: .9em;
-  }
-
-  .advantage-item > span:last-child {
-    font-size: .8em;
-  }
-
-  .content-image {
-    width: 100vw;
-    left: calc(-1*(100vw - 100%)/2);
+    text-align: center;
   }
 }
 
@@ -352,15 +410,5 @@ div.form:not(.success) > div > blockquote {
     padding-left: 1em;
     width: 65%;
     min-height: 5.5em;
-  }
-
-  .advantage-item > span:last-child {
-    width: 100%;
-    font-size: .8em;
-  }
-
-  .content-image {
-    width: 100vw;
-    left: calc(-1*(100vw - 100%)/2);
   }
 }

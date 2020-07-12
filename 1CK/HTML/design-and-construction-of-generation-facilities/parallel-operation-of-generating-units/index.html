@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0" />
+  <meta name="keywords" content="http, 404" />
+  <meta name="description" content="Не удается найти веб-страницу или документ" />
+  <link rel="stylesheet" href="../../fonts/icomoon/style.css?300620201722" />
+  <link rel="stylesheet" href="../../fonts/Roboto/style.css?300620201722" />
+  <link rel="stylesheet" href="../../css/default.css?300620201722" />
+  <link rel="stylesheet" href="../../css/style.css?300620201722" />
+  <link rel="stylesheet" href="../../css/header.css?300620201722" />
+  <link rel="stylesheet" href="../../css/burger.css?300620201722" />
+  <link rel="stylesheet" href="../../css/workspace.css?300620201722" />
+  <link rel="stylesheet" href="../../css/baron.css?300620201722" />
+  <link rel="stylesheet" href="../../css/nav.css?300620201722" />
+  <link rel="stylesheet" href="../../css/article.css?300620201722" />
+  <link rel="stylesheet" href="../../css/form.css?300620201722" />
+  <link rel="stylesheet" href="../../css/footer.copyright.css?300620201722" />
+  <link rel="stylesheet" href="../../css/developer.css?300620201722" />
+  <link rel="stylesheet" href="../../css/custom.css?300620201722" />
+  <script defer src="../../json/utheme.json?300620201722"></script>
+  <script defer src="../../js/jquery.js?300620201722"></script>
+  <script defer src="../../js/jquery.baron.js?300620201722"></script>
+  <script defer src="../../js/jquery.throttle-debounce.js?300620201722"></script>
+  <script defer src="../../js/jquery.inputmask.js?300620201722"></script>
+  <script defer src="../../js/jquery.scrollTo.js?300620201722"></script>
+  <script defer src="../../js/jquery.template.js?300620201722"></script>
+  <script defer src="../../js/jquery.form.js?300620201722"></script>
+
+  <link rel="stylesheet" href="css/content.css?300620201722" />
+  <!--script defer src="https://api-maps.yandex.ru/2.1.72/?lang=ru_RU"></script>
+  <script defer src="../map/map.js?300620201722"></script>
+  <link rel="stylesheet" href="../map/map.css?300620201722" /-->
+
+  <title>Организация параллельной работы генерирующих установок с сетью</title>
+</head>
+
+<body onresize="isResize();" onload="isResize();">
+  <div class="container">
+    <!-- header -->
+    <div class="header">
+      <span class="logo logo-header">
+        <span class="header-logo-span logo-span"></span>
+      </span>
+      <ul class="header-ul centering">
+        <li class="header-ul-li header-ul-li-burger">
+          <ul class="burger">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+        <li class="header-ul-li header-ul-li-logo">
+          <span class="logo header-logo">
+            <span class="header-logo-span logo-span"></span>
+          </span>
+        </li>
+        <li class="header-ul-li header-ul-li-nav">
+          <nav class="header-nav">
+            <ul class="header-nav-ul">
+              <li class="header-nav-ul-li">
+                <a class="header-nav-ul-li-element header-nav-ul-li-a" href="/about/" title="Компания">
+                  <span class="header-nav-ul-li-element-span">Компания</span>
+                </a>
+              </li>
+              <li class="header-nav-ul-li">
+                <a class="header-nav-ul-li-element header-nav-ul-li-a" href="/info/" title="Раскрытие информации">
+                  <span class="header-nav-ul-li-element-span">Раскрытие информации</span>
+                </a>
+              </li>
+              <li class="header-nav-ul-li">
+                <a class="header-nav-ul-li-element header-nav-ul-li-a" href="/blog/" title="Блог">
+                  <span class="header-nav-ul-li-element-span">Блог</span>
+                </a>
+              </li>
+              <li class="header-nav-ul-li">
+                <a class="header-nav-ul-li-element header-nav-ul-li-a move" href="/contacts/" title="Контакты" data-move="contacts">
+                  <span class="header-nav-ul-li-element-span">Контакты</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </li>
+        <li class="header-ul-li">
+          <a class="phone header-phone" href="tel:+74742435117" title="+7 (4742) 43-51-17">
+            <span class="accent header-phone-span phone-span">+7 (4742) 43-51-17</span>
+            <span class="header-phone-span-comment phone-span-comment">Бесплатная консультация</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /header -->
+    <!-- workspace -->
+    <div class="workspace">
+      <div>
+        <div class="box">
+          <div>
+            <span class="logo aside-logo"><span class="aside-logo-span logo-span"></span></span> <a class="phone aside-phone" href="tel:+74742435117" title="+7 (4742) 43-51-17">
+              <span class="accent aside-phone-span phone-span">+7 (4742) 43-51-17</span>
+              <span class="aside-phone-span-comment phone-span-comment">Бесплатная консультация</span>
+            </a>
+          </div>
+          <div class="baron baron-nav">
+            <div class="baron-scroller">
+              <ul>
+                <li>
+                  <nav>
+                    <ul>
+                      <li class="more selected">
+                        <a href="#" title="Технологическое присоединение к электрическим сетям">
+                          <span>
+                            <span>Технологическое присоединение к электрическим сетям</span>
+                          </span>
+                        </a>
+                        <span></span>
+                        <ul>
+                          <li>
+                            <div>
+                              <span>
+                                <span>Увеличение мощности энергоустановок</span>
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#" title="Обслуживание энергетических сетей">
+                          <span>
+                            <span>Обслуживание энергетических сетей</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" title="Проектирование и строительство электрических сетей">
+                          <span>
+                            <span>Проектирование и строительство электрических сетей</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="more">
+                        <a href="#" title="Проектирование и строительство объектов генерации">
+                          <span>
+                            <span>Проектирование и строительство объектов генерации</span>
+                          </span>
+                        </a>
+                        <span></span>
+                        <ul>
+                          <li>
+                            <a href="#" title="Параллельная работа генерирующих установок">
+                              <span>
+                                <span>Параллельная работа генерирующих установок</span>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#" title="Проектирование и строительство сетей связи">
+                          <span>
+                            <span>Проектирование и строительство сетей связи</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="more">
+                        <a href="#" title="Энергоконсультант">
+                          <span>
+                            <span>Энергоконсультант</span>
+                          </span>
+                        </a>
+                        <span></span>
+                        <ul>
+                          <li>
+                            <a href="#" title="Резервируемая мощность">
+                              <span>
+                                <span>Резервируемая мощность</span>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </li>
+                <li>
+                  <nav>
+                    <ul>
+                      <li>
+                        <a href="#" title="Компания">
+                          <span>
+                            <span>Компания</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" title="Раскрытие информации">
+                          <span>
+                            <span>Раскрытие информации</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" title="Блог">
+                          <span>
+                            <span>Блог</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="move" href="#" title="Контакты" data-move="contacts">
+                          <span>
+                            <span>Контакты</span>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </li>
+              </ul>
+            </div>
+            <div class="baron-track">
+              <div class="baron-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="box">
+          <span></span>
+          <div></div>
+          <div class="baron baron-article">
+            <div class="baron-scroller">
+              <ul>
+                <!-- article -->
+                <li>
+                  <article>
+                    <div class="article-image">
+                      <div class="article-image-blur" style="background-image:url(img/image.1.jpg)"></div>
+                      <div class="article-image-div alignment">
+                        <div class="centering">
+                          <h1 class="article-image-header">Организация параллельной работы генерирующих установок с сетью</h1>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <header class="centering">
+                        <blockquote class="blockquote-settings">Для любых электростанций, включая высоковольтные электростанции и газовые энергокомплексы</blockquote>
+                        <ul class="advantage">
+                          <li class="advantage-item">
+                            <div class="advantage-item-div"></div>
+                            <span class="advantage-item-span">
+                              <span>Разработка схем<br />выдачи мощности</span>
+                            </span>
+                          </li>
+                          <li class="advantage-item">
+                            <div class="advantage-item-div"></div>
+                            <span class="advantage-item-span">
+                              <span>Разработка проектов<br />с нуля</span>
+                            </span>
+                          </li>
+                          <li class="advantage-item">
+                            <div class="advantage-item-div"></div>
+                            <span class="advantage-item-span">
+                              <span>Завершение<br />начатых проектов</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </header>
+                      <div class="centering">
+                        <h2>Ключевые характеристики мини-ТЭЦ:</h2>
+                        <ul class="steps border">
+                          <li class="step-item">
+                            <div class="step-item-div">
+                              <span>Мини-ТЭЦ (да и любая промышленная газопоршневая электростанция) не являются резервным или аварийным источником питания. Их задача не сглаживать пики потребления или повышать надежность (категорию надежности) электропитания, их задача постоянно генерировать экономию, через дешевую электроэнергию для предприятия.</span>
+                            </div>
+                          </li>
+                          <li class="step-item">
+                            <div class="step-item-div">
+                              <span>ГПУ (газопоршневые установки) максимально эффективна тогда, когда её загрузка стремится к 100% мощности в 100% времени. При неполной загрузке затраты на сервисное обслуживание растут обратно пропорционально, и так же растёт удельное потребление газа.</span>
+                            </div>
+                          </li>
+                          <li class="step-item">
+                            <div class="step-item-div">
+                              <span>Наиболее эффективный режим - это параллельная работа с сетью (или односторонняя параллельная работа), когда работа мини-тэц ровная и постоянная.</span>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="plan">
+                          <li class="plan-item">
+                            <span>
+                              <span>Модульная конструкция энергоцентра</span>
+                            </span>
+                            <span>Используется при дефиците мощности в сетях внешнего электроснабжения. Модульная конструкция позволяет наращивать и видоизменять систему до необходимого уровня</span>
+                            <ol class="plan-item-ol">
+                              <li>
+                                <span>Наилучшее техническое решение.</span>
+                              </li>
+                              <li>
+                                <span>Дополнительные устройства синхронизации.</span>
+                              </li>
+                              <li>
+                                <span>Устройство распределения мощности.</span>
+                              </li>
+                              <li>
+                                <span>Защита сети и генератора.</span>
+                              </li>
+                              <li>
+                                <span>Возможность выбора: основной, резервный режим или экспорт мощности в сеть.</span>
+                              </li>
+                              <li>
+                                <span>Завершённая система управления электроснабжением.</span>
+                              </li>
+                            </ol>
+                          </li>
+                          <li class="plan-item">
+                            <span>
+                              <span>Варианты подключения газопоршневого агрегата к сети</span>
+                            </span>
+                            <ol class="plan-item-ol">
+                              <li>
+                                <span>По низкой стороне с напряжением 0,4 кВ параллельно сети на нагрузку. В этом варианте потребление энергии из сети меньше на величину мощности выдаваемой агрегатом.</span>
+                              </li>
+                              <li>
+                                <span>По высокой стороне через повышающий трансформатор. В таком варианте подключения можно питать отдалённые объекты одного энергетического района.</span>
+                              </li>
+                            </ol>
+                          </li>
+                          <li class="plan-item">
+                            <span>
+                              <span>Аварийное резервирование сети</span>
+                            </span>
+                            <ol class="plan-item-ol">
+                              <li>
+                                <span>Автоматически запускает электростанцию после пропадания сети (основного источника электрической энергии) и работает в качестве запасного источника энергии до появления основного.</span>
+                              </li>
+                              <li>
+                                <span>Время работы в режиме ожидания, а также в режиме источника питания не ограничено.</span>
+                              </li>
+                              <li>
+                                <span>Время включения автоматического выключателя генератора (начало подачи напряжения) и время до переключения на основной источник электроэнергии задаёт оператор в параметрах контроллера по управлению газопоршневой электростанцией.</span>
+                              </li>
+                              <li>
+                                <span>Главное условие</span>
+                                <ul>
+                                  <li>Потребляемая мощность не должна превышать номинальную мощность, выдаваемую агрегатом.</li>
+                                </ul>
+                              </li>
+                            </ol>
+                          </li>
+                          <li class="plan-item">
+                            <span>
+                              <span>Варианты переключения с резервного источника питания на основной</span>
+                            </span>
+                            <ol class="plan-item-ol">
+                              <li>
+                                <span>С прерыванием</span>
+                              </li>
+                              <li>
+                                <span>Плавный перевод нагрузки при восстановлении сети</span>
+                              </li>
+                              <li>
+                                <span>Обязательно условие работы</span>
+                                <ul>
+                                  <li>Наличие у потребителя контактора отключения сети с параметрами, необходимыми для управления его работой контроллером газопоршневой электростанции.</li>
+                                </ul>
+                              </li>
+                            </ol>
+                          </li>
+                        </ul>
+                        <h2>Этапы разработки проекта с нуля</h2>
+                        <ul class="steps">
+                          <li class="step-item step-item-empty">
+                            <div class="step-item-div">
+                              <span>Технико-экономический анализ целесообразности собственной электрической станции</span>
+                            </div>
+                          </li>
+                          <li class="step-item step-item-empty">
+                            <div class="step-item-div">
+                              <span>Сбор разрешительных документов (ТУ, согласование лимитов, выполнение технических расчетов)</span>
+                            </div>
+                          </li>
+                          <li class="step-item step-item-empty">
+                            <div class="step-item-div">
+                              <span>Разработка проектой документации</span>
+                            </div>
+                          </li>
+                          <li class="step-item step-item-empty">
+                            <div class="step-item-div">
+                              <span>Монтаж</span>
+                            </div>
+                          </li>
+                          <li class="step-item step-item-empty">
+                            <div class="step-item-div">
+                              <span>Пуско-наладочные работы</span>
+                            </div>
+                          </li>
+                          <li class="step-item step-item-empty">
+                            <div class="step-item-div">
+                              <span>Проведение электроизмерений и испытаний оборудования</span>
+                            </div>
+                          </li>
+                          <li class="step-item step-item-empty">
+                            <div class="step-item-div">
+                              <span>Урегулирование вопросов с надзорными организациями</span>
+                            </div>
+                          </li>
+                          <li class="step-item step-item-empty">
+                            <div class="step-item-div">
+                              <span>Другие электротехнические услуги</span>
+                            </div>
+                          </li>
+                        </ul>
+                        <blockquote class="blockquote-content">Оставьте заявку на организацию параллельной работы генерирующих установок с сетью</blockquote>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <!-- /article -->
+                <!-- footer -->
+                <li id="contacts">
+                  <footer class="alignment">
+                    <div id="feedback" class="form feedback">
+                      <div>
+                        <span>Оставьте заявку!</span>
+                        <span>Спасибо!</span>
+                        <blockquote>Заполните поля формы с контактными данными и кратко опишите суть задачи, которую необходимо решить.</blockquote>
+                        <blockquote>Ваше сообщение успешно отправлено. В ближайшее время с Вами свяжется наш специалист и ответит на все, интересующие Вас, вопросы.</blockquote>
+                      </div>
+                      <form name="feedback" method="post" action="#">
+                        <!--ul>
+                          <li>
+                            <div class="accent">
+                              <span>Свяжитесь с нами</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="choose utheme">
+                              <label>
+                                <input class="field" type="text" name="utheme" value="" readonly="readonly" data-form="feedback" data-list="utheme" />
+                                <span>Тема обращения</span>
+                              </label>
+                            </div>
+                          </li>
+                        </ul-->
+                        <ul>
+                          <li>
+                            <div class="required">
+                              <label class="required">
+                                <input class="field" type="text" name="uname" value="" data-form="feedback" data-check="name" />
+                                <span>Имя</span>
+                              </label>
+                            </div>
+                            <div class="required">
+                              <label class="required">
+                                <input class="field" type="tel" name="uphone" value="" data-form="feedback" data-check="phone" />
+                                <span>Телефон</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label>
+                                <input class="field" type="email" name="uemail" value="" data-form="feedback" data-check="email" />
+                                <span>E-mail</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="textarea">
+                              <label>
+                                <textarea class="field" name="umessage" data-form="feedback"></textarea>
+                                <span>Сопроводительное письмо</span>
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                        <ol>
+                          <li>
+                            <div class="consent">
+                              <span>
+                                <span>Нажимая на кнопку «<strong>ОТПРАВИТЬ</strong>»,<br />я соглашаюсь с</span>
+                                <a href="/policy/" title="политикой конфиденциальности">политикой конфиденциальности</a> </span>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                              <button class="accent" type="button" data-form="feedback">ОТПРАВИТЬ</button>
+                            </div>
+                          </li>
+                        </ol>
+                      </form>
+                    </div>
+                    <div class="map-footer">
+                      <div class="map-footer-div">
+                        <div id="map" class="map"></div>
+                        <div class="map-footer-wave"></div>
+                      </div>
+                    </div>
+                    <div class="footer centering copyright">
+                      <span>© 2020 Первая сетевая компания</span><br />
+                      <a href="maito:1ck@urbexgroup.ru" title="1ck@urbexgroup.ru">1ck@urbexgroup.ru</a>
+                      <a class="developer" href="https://www.tarantul.zone/" title="разработка сайта" target="_blank" rel="noopener"></a>
+                    </div>
+                  </footer>
+                </li>
+                <!-- /footer -->
+              </ul>
+            </div>
+            <div class="baron-track">
+              <div class="baron-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /workspace -->
+  </div>
+</body>
+
+</html>
