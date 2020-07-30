@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@media (min-width : 1201px) {
+  .article-image-blur {
+    background-image: url(/upload/10/image-1.jpg);
+  }
+
+  .content-image-blur {
+    background-image: url(/upload/10/image-2.jpg);
+  }
+}
+
+@media (min-width : 961px) and (max-width : 1200px) {
+  .article-image-blur {
+    background-image: url(/upload/10/image-1.1200.jpg);
+  }
+
+  .content-image-blur {
+    background-image: url(/upload/10/image-2.1200.jpg);
+  }
+}
+
+@media (min-width : 721px) and (max-width : 960px) {
+  .article-image-blur {
+    background-image: url(/upload/10/image-1.960.jpg);
+  }
+
+  .content-image-blur {
+    background-image: url(/upload/10/image-2.960.jpg);
+  }
+}
+
+@media (min-width : 481px) and (max-width : 720px) {
+  .article-image-blur {
+    background-image: url(/upload/10/image-1.720.jpg);
+  }
+
+  .content-image-blur {
+    background-image: url(/upload/10/image-2.720.jpg);
+  }
+}
+
+@media (max-width : 480px) {
+  .article-image-blur {
+    background-image: url(/upload/10/image-1.480.jpg);
+  }
+
+  .content-image-blur {
+    background-image: url(/upload/10/image-2.480.jpg);
+  }
+}
